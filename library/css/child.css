@@ -1,6 +1,15 @@
 body, html {
   height: 100% !important;
   -webkit-font-smoothing: antialiased; }
+  body .home .col-md-3, html .home .col-md-3 {
+    width: 32%;
+    background: green;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 10px;
+    min-height: 300px; }
 
 .wrapper {
   min-height: 100%;
@@ -23,35 +32,49 @@ body, html {
   .navbar .navbar-toggle .icon-bar {
     height: 3px;
     border-radius: 0; }
-.navbar .navbar-brand a {
-  color: darkgray; }
-  .navbar .navbar-brand a:hover {
+.navbar a.navbar-brand {
+  color: white !important; }
+  .navbar a.navbar-brand:hover {
     background-color: rgba(0, 0, 0, 0.1); }
 .navbar .navbar-nav {
   float: right; }
 .navbar .navbar-nav li a {
-  color: darkgray;
+  color: white;
   -webkit-font-smoothing: antialiased;
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 300; }
   .navbar .navbar-nav li a:hover {
+    color: white;
     background: rgba(0, 0, 0, 0.1); }
+  .navbar .navbar-nav li a:focus {
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    outline: 0; }
 .navbar .navbar-nav li.active a {
+  color: white;
   background: rgba(0, 0, 0, 0.1); }
   .navbar .navbar-nav li.active a:hover {
+    color: white;
     background: rgba(0, 0, 0, 0.2); }
+  .navbar .navbar-nav li.active a:focus {
+    color: white; }
 
 .navbar-default {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); }
+  background: green; }
 
 .content {
   padding: 10px 0 10px 0; }
 
+#content {
+  margin-top: 0; }
+
 #hero {
   position: relative;
   text-align: center; }
+
+.tag {
+  color: green; }
 
 #content {
   -webkit-font-smoothing: antialiased; }
@@ -68,6 +91,21 @@ body, html {
 .push {
   height: 0;
   float: left; }
+
+.footer {
+  background: darkgray; }
+
+.source-org {
+  display: inline-block;
+  margin-bottom: 0;
+  color: white; }
+
+.footer-nav {
+  display: inline-block;
+  float: right;
+  margin: 0; }
+  .footer-nav a {
+    color: white; }
 
 .social {
   margin-left: -40px;
