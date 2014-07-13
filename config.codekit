@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16921",
+"creatorBuild": "17018",
 "files": {
 	"\/404.php": {
 		"fileType": 8192,
@@ -64,17 +64,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/favicon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1459,
-		"inputAbbreviatedPath": "\/favicon.png",
-		"outputAbbreviatedPath": "\/favicon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/footer.php": {
 		"fileType": 8192,
@@ -166,6 +155,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/library\/css\/child.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/library\/css\/child.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/library\/css\/ie.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -202,552 +200,46 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/library\/images\/Anya copy.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.43233e+06,
-		"inputAbbreviatedPath": "\/library\/images\/Anya copy.png",
-		"outputAbbreviatedPath": "\/library\/images\/Anya copy.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/Anya.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.43233e+06,
-		"inputAbbreviatedPath": "\/library\/images\/Anya.png",
-		"outputAbbreviatedPath": "\/library\/images\/Anya.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/apple-icon-touch.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8439,
-		"inputAbbreviatedPath": "\/library\/images\/apple-icon-touch.png",
-		"outputAbbreviatedPath": "\/library\/images\/apple-icon-touch.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/box copy.jpg": {
+	"\/library\/images\/bath.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2.97212e+06,
-		"inputAbbreviatedPath": "\/library\/images\/box copy.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/box copy.jpg",
+		"initialSize": 6.42086e+06,
+		"inputAbbreviatedPath": "\/library\/images\/bath.jpeg",
+		"outputAbbreviatedPath": "\/library\/images\/bath.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/box.jpg": {
+	"\/library\/images\/bedroom.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2.97212e+06,
-		"inputAbbreviatedPath": "\/library\/images\/box.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/box.jpg",
+		"initialSize": 2.37695e+06,
+		"inputAbbreviatedPath": "\/library\/images\/bedroom.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/bedroom.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/cover-photo.jpg": {
+	"\/library\/images\/kitchen.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 162178,
-		"inputAbbreviatedPath": "\/library\/images\/cover-photo.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/cover-photo.jpg",
+		"initialSize": 4.64991e+06,
+		"inputAbbreviatedPath": "\/library\/images\/kitchen.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/kitchen.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/custom-post-icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 462,
-		"inputAbbreviatedPath": "\/library\/images\/custom-post-icon.png",
-		"outputAbbreviatedPath": "\/library\/images\/custom-post-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/facebook.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 235,
-		"inputAbbreviatedPath": "\/library\/images\/facebook.png",
-		"outputAbbreviatedPath": "\/library\/images\/facebook.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/favicon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1701,
-		"inputAbbreviatedPath": "\/library\/images\/favicon.png",
-		"outputAbbreviatedPath": "\/library\/images\/favicon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/flat.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6716,
-		"inputAbbreviatedPath": "\/library\/images\/flat.png",
-		"outputAbbreviatedPath": "\/library\/images\/flat.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/instagram.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 302,
-		"inputAbbreviatedPath": "\/library\/images\/instagram.png",
-		"outputAbbreviatedPath": "\/library\/images\/instagram.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/Kids-Fitness-home.jpg": {
+	"\/library\/images\/living.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 38357,
-		"inputAbbreviatedPath": "\/library\/images\/Kids-Fitness-home.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/Kids-Fitness-home.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/Kids-Fitness.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.72713e+06,
-		"inputAbbreviatedPath": "\/library\/images\/Kids-Fitness.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/Kids-Fitness.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/Kids-home.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 377639,
-		"inputAbbreviatedPath": "\/library\/images\/Kids-home.png",
-		"outputAbbreviatedPath": "\/library\/images\/Kids-home.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/Kids.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 452297,
-		"inputAbbreviatedPath": "\/library\/images\/Kids.png",
-		"outputAbbreviatedPath": "\/library\/images\/Kids.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/kids2 copy.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5.04348e+06,
-		"inputAbbreviatedPath": "\/library\/images\/kids2 copy.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/kids2 copy.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/kids2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5.04348e+06,
-		"inputAbbreviatedPath": "\/library\/images\/kids2.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/kids2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/login-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7019,
-		"inputAbbreviatedPath": "\/library\/images\/login-logo.png",
-		"outputAbbreviatedPath": "\/library\/images\/login-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/logo-2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8257,
-		"inputAbbreviatedPath": "\/library\/images\/logo-2x.png",
-		"outputAbbreviatedPath": "\/library\/images\/logo-2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/matPilates copy.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 249233,
-		"inputAbbreviatedPath": "\/library\/images\/matPilates copy.png",
-		"outputAbbreviatedPath": "\/library\/images\/matPilates copy.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/matPilates-home.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 43793,
-		"inputAbbreviatedPath": "\/library\/images\/matPilates-home.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/matPilates-home.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/matPilates-home.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 31577,
-		"inputAbbreviatedPath": "\/library\/images\/matPilates-home.png",
-		"outputAbbreviatedPath": "\/library\/images\/matPilates-home.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/matPilates.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 249233,
-		"inputAbbreviatedPath": "\/library\/images\/matPilates.png",
-		"outputAbbreviatedPath": "\/library\/images\/matPilates.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/Messages Image(961188935).png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 499301,
-		"inputAbbreviatedPath": "\/library\/images\/Messages Image(961188935).png",
-		"outputAbbreviatedPath": "\/library\/images\/Messages Image(961188935).png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/Tae-Bo-home.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29194,
-		"inputAbbreviatedPath": "\/library\/images\/Tae-Bo-home.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/Tae-Bo-home.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/Tae-Bo.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 689553,
-		"inputAbbreviatedPath": "\/library\/images\/Tae-Bo.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/Tae-Bo.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/taebo-home.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 22704,
-		"inputAbbreviatedPath": "\/library\/images\/taebo-home.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/taebo-home.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/taeboFitness copy.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 440971,
-		"inputAbbreviatedPath": "\/library\/images\/taeboFitness copy.png",
-		"outputAbbreviatedPath": "\/library\/images\/taeboFitness copy.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/taeboFitness-home.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 327332,
-		"inputAbbreviatedPath": "\/library\/images\/taeboFitness-home.png",
-		"outputAbbreviatedPath": "\/library\/images\/taeboFitness-home.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/taeboFitness.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 440971,
-		"inputAbbreviatedPath": "\/library\/images\/taeboFitness.png",
-		"outputAbbreviatedPath": "\/library\/images\/taeboFitness.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/trx copy.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4.75497e+06,
-		"inputAbbreviatedPath": "\/library\/images\/trx copy.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/trx copy.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/trx-home.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 459726,
-		"inputAbbreviatedPath": "\/library\/images\/trx-home.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/trx-home.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/trx.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4.75497e+06,
-		"inputAbbreviatedPath": "\/library\/images\/trx.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/trx.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/twitter.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 279,
-		"inputAbbreviatedPath": "\/library\/images\/twitter.png",
-		"outputAbbreviatedPath": "\/library\/images\/twitter.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/vinyasa.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 45072,
-		"inputAbbreviatedPath": "\/library\/images\/vinyasa.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/vinyasa.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/win8-tile-icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8048,
-		"inputAbbreviatedPath": "\/library\/images\/win8-tile-icon.png",
-		"outputAbbreviatedPath": "\/library\/images\/win8-tile-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga copy.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.38155e+06,
-		"inputAbbreviatedPath": "\/library\/images\/yoga copy.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga copy.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga-home.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.92929e+06,
-		"inputAbbreviatedPath": "\/library\/images\/yoga-home.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga-home.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga-treat-default-thumbnail.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 110798,
-		"inputAbbreviatedPath": "\/library\/images\/yoga-treat-default-thumbnail.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga-treat-default-thumbnail.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.38155e+06,
-		"inputAbbreviatedPath": "\/library\/images\/yoga.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 72745,
-		"inputAbbreviatedPath": "\/library\/images\/yoga1.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 87360,
-		"inputAbbreviatedPath": "\/library\/images\/yoga2.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 65073,
-		"inputAbbreviatedPath": "\/library\/images\/yoga3.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 41261,
-		"inputAbbreviatedPath": "\/library\/images\/yoga4.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga5.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 52385,
-		"inputAbbreviatedPath": "\/library\/images\/yoga5.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga5.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga6.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 164106,
-		"inputAbbreviatedPath": "\/library\/images\/yoga6.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga6.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yoga7.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 93654,
-		"inputAbbreviatedPath": "\/library\/images\/yoga7.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/yoga7.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yogaBarre copy.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 459363,
-		"inputAbbreviatedPath": "\/library\/images\/yogaBarre copy.png",
-		"outputAbbreviatedPath": "\/library\/images\/yogaBarre copy.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yogaBarre-home.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 56119,
-		"inputAbbreviatedPath": "\/library\/images\/yogaBarre-home.png",
-		"outputAbbreviatedPath": "\/library\/images\/yogaBarre-home.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/yogaBarre.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 459363,
-		"inputAbbreviatedPath": "\/library\/images\/yogaBarre.png",
-		"outputAbbreviatedPath": "\/library\/images\/yogaBarre.png",
+		"initialSize": 4.63276e+06,
+		"inputAbbreviatedPath": "\/library\/images\/living.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/living.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1679,22 +1171,22 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/library\/translation\/translation.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/library\/translation\/translation.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"useLibsass": false
 		},
 	"\/page-custom.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-custom.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-services.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-services.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1863,10 +1355,6 @@
 			"active": 0,
 			"flagValue": 3
 			},
-		"no-unnecessary_fat_arrows": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"no_backticks": {
 			"active": 1,
 			"flagValue": -1
@@ -1921,6 +1409,10 @@
 			},
 		"no_unnecessary_double_quotes": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"non_empty_constructor_needs_parens": {

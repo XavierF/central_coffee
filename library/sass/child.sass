@@ -9,6 +9,8 @@ body, html
 	height: 100% !important
 	-webkit-font-smoothing: antialiased
 	.home
+		.row
+			margin-bottom: 10px
 		.col-md-3
 			width: 32%
 			background: green
@@ -82,8 +84,7 @@ body, html
 	background: green
 .content
 	padding: 10px 0 10px 0
-#content
-	margin-top: 0
+	
 
 
 // HERO
@@ -95,10 +96,6 @@ body, html
 	color: green
 
 
-
-
-
-
 	
 
 //PAGE CONTENT
@@ -106,20 +103,40 @@ body, html
 
 #content
 	-webkit-font-smoothing: antialiased
+	margin-top: 0
+	display: block
 
+#inner-content
+	padding: 10px 0 0 0
+	display: block
+	margin-left: 0
+	margin-right: 0
 
+.article-header
+	margin: 10px 0
 
 
 .entry-content
 	-webkit-font-smoothing: antialiased
 
 
+.visual
+	float: left
+	width: 450px 
+	height: 300px
+	padding: 0
+	text-align: center
+	margin-left: 15px
 
-
-
+.services
+	li
+		font-size: 1.25em
+		font-weight: 300
+		margin-bottom: 4px
 
 .archive-title, .entry-title, .page-title
 	color: black
+	margin: 0
 
 .page-title, .entry-title, .archive-title, .posts-title, .excerpt-read-more
 	a
@@ -169,4 +186,4 @@ body, html
 
 @media screen and (min-width: 1200px)
 	.container
-		width: 970px
+		width: 1024px
