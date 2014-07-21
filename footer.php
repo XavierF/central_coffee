@@ -25,9 +25,25 @@
 		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
 		<!-- CUSTOM JS  -->
-		<script>
-		jQuery('li.trigger-contact a').attr('id', 'contact-us');
-			
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+     $('.navbar-toggle').bind( "touchstart", function(e){
+          e.preventDefault();
+            $('.navbar-collapse').collapse('toggle');
+          });
+			$('.slides').slick({
+				autoplay: false,
+				fade: true,
+				speed: 1000,
+				dots: true,
+				infinite: false,
+				slidesToShow: 1,
+  		slidesToScroll: 1,
+  		swipe: true	
+				});
+			});
+
 		</script>
 	</body>
 

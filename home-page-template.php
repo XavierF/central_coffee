@@ -11,9 +11,32 @@
 <section id="hero" role="hero-unit">
 	<div class="container-fluid">
 		<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
-	</div>
-</section> <!-- end hero-unit -->
+					<div class="slides">
 
+						<div class="item" style="background: url('<?php the_field('slide_1');?>') 50% 50% no-repeat; background-size: cover;">
+						
+					  </div><!-- end .item -->
+
+					<div class="item" style="background: url('<?php the_field('slide_2');?>') 50% 50% no-repeat; background-size: cover;">
+	
+					</div><!-- end .item -->
+
+			</div><!-- end .slides-->
+	</div><!-- end .container-fluid -->
+</section> <!-- end hero-unit -->
+<section id="info">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">	
+     		<?php the_field('info'); ?>
+			</div>
+			<div class="quote-form col-md-5">	
+				<h3 class="center-block">Request a Quote</h3>
+     		<?php echo do_shortcode( '[contact-form-7 id="62" title="Request A Quote"]' ); ?>
+			</div>
+		</div><!-- .row -->
+	</div><!-- .container -->
+</section>
 
 	
 
@@ -69,19 +92,7 @@
 		</div>
 	</div>
 </section>
-<section id="info">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-7">	
-     		<?php the_field('info'); ?>
-			</div>
-			<div class="quote-form col-md-5">	
-				<h3 class="center-block">Request a Quote</h3>
-     		<?php echo do_shortcode( '[contact-form-7 id="76" title="Request A Quote"]' ); ?>
-			</div>
-		</div><!-- .row -->
-	</div><!-- .container -->
-</section>
+
 <section id="testimonials">
 	<div class="container">
 				<div class="row">
