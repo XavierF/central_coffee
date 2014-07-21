@@ -1,25 +1,40 @@
 //BRAND COLORS
 $lightGrey: #B3A9AF
-$darkGrey: #3F3C3E
+$darkGrey: #272526
 $white: #FFFFFF
 $green: #6AD137
-$lightGreen: #72F631
+$lightGreen: #C2D785
+$sage: #B1BBA9
+$lightSage: #C6CBBA
+$dark-beige: #7F7F67
 
 body, html
 	height: 100% !important
 	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
 	.home
 		.row
 			margin-bottom: 10px
 		.col-md-3
 			width: 32%
-			background: green
+			background: $sage
 			color: white
 			font-size: 1.2em
 			font-weight: 600
 			margin: 0 5px
 			padding: 10px
 			min-height: 300px
+		.test
+			background: $sage
+			border: 1px solid darken($sage, 20%)
+			color: white
+			em
+				float: right
+
+	a
+		color: green
+		&:hover
+			color: green 
 
 .wrapper
 	min-height: 100%
@@ -27,9 +42,9 @@ body, html
 	height: 100% !important
 	margin: 0 auto -106px
 
-
-
 // HEADER
+.navbar-default
+	background: green
 .navbar
 	.container
 		position: relative
@@ -48,9 +63,10 @@ body, html
 			border-radius: 0
 
 	a.navbar-brand
+		line-height: 30px
 		color: white !important
 		&:hover
-			background-color: rgba(0, 0, 0, .1)
+			background-color: transparent
 	.navbar-nav
 		float: right
 	.navbar-nav
@@ -80,13 +96,10 @@ body, html
 //			&:last-child
 //				a
 //					padding: 20px 0 20px 15px
-.navbar-default
-	background: green
+
 .content
 	padding: 10px 0 10px 0
 	
-
-
 // HERO
 #hero
 	position: relative
@@ -95,11 +108,12 @@ body, html
 .tag
 	color: green
 
-
-	
-
 //PAGE CONTENT
-
+.center-block 
+	display: block
+	margin-left: auto
+	margin-right: auto
+	text-align: center
 
 #content
 	-webkit-font-smoothing: antialiased
@@ -128,11 +142,48 @@ body, html
 	text-align: center
 	margin-left: 15px
 
+#main-content
+	p
+		font-size: 1.5em
+		font-weight: 200
+		line-height: 1.5em
+		color: darken($darkGrey, 10%)
+	padding: 10px 0
+	background-color: lighten($lightSage, 10%)
+	border-top: 1px solid $lightSage
+	border-bottom: 1px solid $lightSage
+
+#testimonials
+	padding: 10px 0
+	margin: 10px 0
+h1.section-header
+	color: darken($darkGrey, 15%) !important
+#info
+	padding: 10px 0
+
+blockquote
+	border-left: 0
+
 .services
+	ul
+		margin-left: 30px
 	li
 		font-size: 1.25em
 		font-weight: 300
 		margin-bottom: 4px
+	h4
+		margin: 20px 0 10px
+	p
+		font-size: 1.25em
+		font-weight: 300
+ul.extras
+	margin-left: -20px !important
+	li
+		font-size: 1.25em
+		font-weight: 300
+		margin-bottom: 4px
+
+
 
 .archive-title, .entry-title, .page-title
 	color: black
@@ -142,15 +193,55 @@ body, html
 	a
 		color: black
 
-// SIDEBAR
+// FORM
+.quote-form
+	background-color: $lightSage
+	padding-left: 0
+
+.wpcf7-form
+	@extend.form-horizontal
+
+.form-horizontal .form-group
+	margin-left: 0
+	marging-right: 0 !important
+	padding: 0 20px
+
+.wpcf7-form-control
+	width: 100%
+
+	
+
+label.col-sm-4
+	float: left
+	clear: both
+	display: block
+
+span.wpcf7-form-control-wrap
+
+
+span.wpcf7-radio options
+	width: 100%
+
+.control-label
+	padding-left: 0
+
+.wpcf7-submit
+	background: $green
+	border: 0
+	border-radius: 0
+	color: $white 
+	&:hover
+		background: darken($green, 10%)
 
 
 // FOOTER
+
 .push
 	height: 0
 	float: left
 .footer
-	background: darkGrey
+	background: $dark-beige
+	
 .source-org
 	display: inline-block
 	margin-bottom: 0
@@ -162,11 +253,6 @@ body, html
 	a
 		color: white
 
-
-// SOCIAL
-.social
-	margin-left: -40px
-	margin-top: 20px
 
 
 	

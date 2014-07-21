@@ -1,23 +1,37 @@
 body, html {
   height: 100% !important;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; }
   body .home .row, html .home .row {
     margin-bottom: 10px; }
   body .home .col-md-3, html .home .col-md-3 {
     width: 32%;
-    background: green;
+    background: #b1bba9;
     color: white;
     font-size: 1.2em;
     font-weight: 600;
     margin: 0 5px;
     padding: 10px;
     min-height: 300px; }
+  body .home .test, html .home .test {
+    background: #b1bba9;
+    border: 1px solid #7d8e70;
+    color: white; }
+    body .home .test em, html .home .test em {
+      float: right; }
+  body a, html a {
+    color: green; }
+    body a:hover, html a:hover {
+      color: green; }
 
 .wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100% !important;
   margin: 0 auto -106px; }
+
+.navbar-default {
+  background: green; }
 
 .navbar .container {
   position: relative; }
@@ -35,9 +49,10 @@ body, html {
     height: 3px;
     border-radius: 0; }
 .navbar a.navbar-brand {
+  line-height: 30px;
   color: white !important; }
   .navbar a.navbar-brand:hover {
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: transparent; }
 .navbar .navbar-nav {
   float: right; }
 .navbar .navbar-nav li a {
@@ -62,9 +77,6 @@ body, html {
   .navbar .navbar-nav li.active a:focus {
     color: white; }
 
-.navbar-default {
-  background: green; }
-
 .content {
   padding: 10px 0 10px 0; }
 
@@ -74,6 +86,12 @@ body, html {
 
 .tag {
   color: green; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
 
 #content {
   -webkit-font-smoothing: antialiased;
@@ -100,10 +118,48 @@ body, html {
   text-align: center;
   margin-left: 15px; }
 
+#main-content {
+  padding: 10px 0;
+  background-color: #dee1d7;
+  border-top: 1px solid #c6cbba;
+  border-bottom: 1px solid #c6cbba; }
+  #main-content p {
+    font-size: 1.5em;
+    font-weight: 200;
+    line-height: 1.5em;
+    color: #0d0c0d; }
+
+#testimonials {
+  padding: 10px 0;
+  margin: 10px 0; }
+
+h1.section-header {
+  color: black !important; }
+
+#info {
+  padding: 10px 0; }
+
+blockquote {
+  border-left: 0; }
+
+.services ul {
+  margin-left: 30px; }
 .services li {
   font-size: 1.25em;
   font-weight: 300;
   margin-bottom: 4px; }
+.services h4 {
+  margin: 20px 0 10px; }
+.services p {
+  font-size: 1.25em;
+  font-weight: 300; }
+
+ul.extras {
+  margin-left: -20px !important; }
+  ul.extras li {
+    font-size: 1.25em;
+    font-weight: 300;
+    margin-bottom: 4px; }
 
 .archive-title, .entry-title, .page-title {
   color: black;
@@ -112,12 +168,46 @@ body, html {
 .page-title a, .entry-title a, .archive-title a, .posts-title a, .excerpt-read-more a {
   color: black; }
 
+.quote-form {
+  background-color: #c6cbba;
+  padding-left: 0; }
+
+.wpcf7-form {
+  @extend.form-horizontal; }
+
+.form-horizontal .form-group {
+  margin-left: 0;
+  marging-right: 0 !important;
+  padding: 0 20px; }
+
+.wpcf7-form-control {
+  width: 100%; }
+
+label.col-sm-4 {
+  float: left;
+  clear: both;
+  display: block; }
+
+span.wpcf7-radio options {
+  width: 100%; }
+
+.control-label {
+  padding-left: 0; }
+
+.wpcf7-submit {
+  background: #6ad137;
+  border: 0;
+  border-radius: 0;
+  color: white; }
+  .wpcf7-submit:hover {
+    background: #54ad28; }
+
 .push {
   height: 0;
   float: left; }
 
 .footer {
-  background: darkgray; }
+  background: #7f7f67; }
 
 .source-org {
   display: inline-block;
@@ -130,10 +220,6 @@ body, html {
   margin: 0; }
   .footer-nav a {
     color: white; }
-
-.social {
-  margin-left: -40px;
-  margin-top: 20px; }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .col-md-4 {

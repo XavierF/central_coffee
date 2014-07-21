@@ -1,8 +1,8 @@
 <?php 
 /**
- * Home Page Template
+ * Demo Home Page Template
  *
-   Template Name:  Home Page Template
+   Template Name:  Demo Home Page Template
  *
  */
 ?>
