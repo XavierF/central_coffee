@@ -13,12 +13,12 @@
 		<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
 					<div class="slides">
 
-						<div class="item" style="background: url('<?php the_field('slide_1');?>') 50% 50% no-repeat; background-size: cover;">
-						
+						<div class="item">
+							<img src="<?php the_field('slide_1');?>" class="img-responsive">
 					  </div><!-- end .item -->
 
-					<div class="item" style="background: url('<?php the_field('slide_2');?>') 50% 50% no-repeat; background-size: cover;">
-	
+					<div class="item">
+							<img src="<?php the_field('slide_1');?>" class="img-responsive">
 					</div><!-- end .item -->
 
 			</div><!-- end .slides-->
@@ -31,14 +31,12 @@
      		<?php the_field('info'); ?>
 			</div>
 			<div class="quote-form col-md-5">	
-				<h3 class="center-block">Request a Quote</h3>
-     		<?php echo do_shortcode( '[contact-form-7 id="62" title="Request A Quote"]' ); ?>
+				<h3 class="center-block">Ask For a Free Quote</h3>
+     		<?php echo do_shortcode( '[contact-form-7 id="76" title="Request A Quote"]' ); ?>
 			</div>
 		</div><!-- .row -->
 	</div><!-- .container -->
 </section>
-
-	
 
 <section id="main-content">
 	<div class="container">

@@ -22,7 +22,7 @@ body, html
 			font-size: 1.2em
 			font-weight: 600
 			margin: 0 5px
-			padding: 10px
+			padding: 10px 
 			min-height: 300px
 			blockquote
 				border-left: 0
@@ -122,6 +122,10 @@ body, html
 
 .tag
 	color: $darkGrey
+
+.slides
+	.item
+		background-size: cover
 
 .slick-slider 
 	position: relative 
@@ -402,22 +406,36 @@ ul.info
 
 .services
 	ul
-		margin-left: 30px
+		margin-left: 0
 	li
 		font-size: 1.25em
 		font-weight: 300
 		margin-bottom: 4px
+		list-style: none
+		&:before
+			content: "■ "
+			margin-right: 10px
+			vertical-align: top
+			color: darken($sage, 10%)
+			font-size: .8em
 	h4
 		margin: 20px 0 10px
 	p
 		font-size: 1.25em
 		font-weight: 300
 ul.extras
-	margin-left: -20px !important
+	padding: 0
 	li
 		font-size: 1.25em
 		font-weight: 300
 		margin-bottom: 4px
+		list-style: none
+		&:before
+			content: "■ "
+			margin-right: 10px
+			vertical-align: top
+			color: darken($sage, 10%)
+			font-size: .8em
 
 
 
@@ -431,7 +449,9 @@ ul.extras
 
 // FORM
 .quote-form
-	background-color: $sage
+	background-color: lighten($lightSage, 10%)
+	padding-top: 10px
+	padding-bottom: 10px
 
 .wpcf7-form
 	@extend.form-horizontal
@@ -439,11 +459,15 @@ ul.extras
 .form-horizontal .form-group
 	margin-left: 0
 	marging-right: 0 !important
-	padding: 0 20px
+	padding: 0 20px 0 5px
 	label
-		margin-left: 10px
+		margin-left: 0
 	.heading
-		margin-left: 15px
+		margin-left: 3px
+
+span.wpcf7-list-item
+	&:first-child
+		margin-left: 3px
 
 span.wpcf7-form-control-wrap
 	width: 100%
@@ -460,14 +484,27 @@ span.wpcf7-form-control-wrap
 	width: 100%
 	border: 1px solid darken($sage, 10%)
 
-label.col-sm-4
-	float: left
-	clear: both
-	display: block
-
 
 span.wpcf7-radio options
 	width: 100%
+
+span.checkbox-78
+	position: relative
+	left: 100
+	top: 0
+
+.checkbox-517
+	span.wpcf7-list-item-label
+		margin-right: 0 !important
+	span
+		&:first-child
+			margin-right: 8px
+		&:nth-child(2)
+			margin-right: 62px
+		&:nth-child(3)
+			margin-right: 60px
+		&:nth-child(4)
+			margin-left: 3px
 
 .control-label
 	padding-left: 0
@@ -477,7 +514,7 @@ span.wpcf7-radio options
 .wpcf7-submit
 	width: 100%
 	background: $green
-	border: 1px solid darken($green, 10%)
+	border: 1px solid desaturate($green, 10%)
 	border-radius: 0
 	color: $white 
 	&:hover
@@ -508,10 +545,45 @@ span.wpcf7-radio options
 	
 // MEDIA QUERIES
 
-@media screen and (max-width: 480px)
+@media screen and (min-width: 320px) and (max-width: 568px)
+	.navbar
+		.container
+			padding: 0
+	a.navbar-brand
+		float: left
+		width: 100%
+		text-align: center !important
+
+	.navbar-toggle
+		position: absolute
+		top: 0
+		right: 0
+
+
+	
 
 
 @media screen and (min-width: 569px) and (max-width:767px)
+
+@media screen and (max-width:767px)
+
+	.navbar-collapse
+		float: left
+		width: 105% !important
+		margin-right: 0 !important
+		padding-right: 0
+		padding-left: 0
+
+	.navbar-nav
+		width: 100%
+		text-align: center
+
+	.navbar
+		.navbar-nav
+			li
+				a
+					padding-left: 0
+
 
 
 @media screen and (min-width: 768px) and (max-width:991px)
@@ -519,6 +591,9 @@ span.wpcf7-radio options
 
 	.col-md-4
 		display: inline-block
+
+@media screen and (max-width: 1199px)
+
 
 @media screen and (min-width: 1200px)
 	.container

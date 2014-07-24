@@ -99,6 +99,9 @@ body, html {
 .tag {
   color: #272526; }
 
+.slides .item {
+  background-size: cover; }
+
 .slick-slider {
   position: relative;
   display: block;
@@ -362,11 +365,18 @@ ul.info {
       font-size: 0.8em; }
 
 .services ul {
-  margin-left: 30px; }
+  margin-left: 0; }
 .services li {
   font-size: 1.25em;
   font-weight: 300;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  list-style: none; }
+  .services li:before {
+    content: "■ ";
+    margin-right: 10px;
+    vertical-align: top;
+    color: #97a48d;
+    font-size: 0.8em; }
 .services h4 {
   margin: 20px 0 10px; }
 .services p {
@@ -374,11 +384,18 @@ ul.info {
   font-weight: 300; }
 
 ul.extras {
-  margin-left: -20px !important; }
+  padding: 0; }
   ul.extras li {
     font-size: 1.25em;
     font-weight: 300;
-    margin-bottom: 4px; }
+    margin-bottom: 4px;
+    list-style: none; }
+    ul.extras li:before {
+      content: "■ ";
+      margin-right: 10px;
+      vertical-align: top;
+      color: #97a48d;
+      font-size: 0.8em; }
 
 .archive-title, .entry-title, .page-title {
   color: black;
@@ -388,7 +405,9 @@ ul.extras {
   color: black; }
 
 .quote-form {
-  background-color: #b1bba9; }
+  background-color: #dee1d7;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .wpcf7-form {
   @extend.form-horizontal; }
@@ -396,11 +415,14 @@ ul.extras {
 .form-horizontal .form-group {
   margin-left: 0;
   marging-right: 0 !important;
-  padding: 0 20px; }
+  padding: 0 20px 0 5px; }
   .form-horizontal .form-group label {
-    margin-left: 10px; }
+    margin-left: 0; }
   .form-horizontal .form-group .heading {
-    margin-left: 15px; }
+    margin-left: 3px; }
+
+span.wpcf7-list-item:first-child {
+  margin-left: 3px; }
 
 span.wpcf7-form-control-wrap {
   width: 100%; }
@@ -417,13 +439,24 @@ span.wpcf7-form-control-wrap {
   width: 100%;
   border: 1px solid #97a48d; }
 
-label.col-sm-4 {
-  float: left;
-  clear: both;
-  display: block; }
-
 span.wpcf7-radio options {
   width: 100%; }
+
+span.checkbox-78 {
+  position: relative;
+  left: 100;
+  top: 0; }
+
+.checkbox-517 span.wpcf7-list-item-label {
+  margin-right: 0 !important; }
+.checkbox-517 span:first-child {
+  margin-right: 8px; }
+.checkbox-517 span:nth-child(2) {
+  margin-right: 62px; }
+.checkbox-517 span:nth-child(3) {
+  margin-right: 60px; }
+.checkbox-517 span:nth-child(4) {
+  margin-left: 3px; }
 
 .control-label {
   padding-left: 0; }
@@ -434,7 +467,7 @@ span.wpcf7-radio options {
 .wpcf7-submit {
   width: 100%;
   background: #6ad137;
-  border: 1px solid #54ad28;
+  border: 1px solid #6ec543;
   border-radius: 0;
   color: white; }
   .wpcf7-submit:hover {
@@ -459,6 +492,33 @@ span.wpcf7-radio options {
   .footer-nav a {
     color: white; }
 
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  .navbar .container {
+    padding: 0; }
+
+  a.navbar-brand {
+    float: left;
+    width: 100%;
+    text-align: center !important; }
+
+  .navbar-toggle {
+    position: absolute;
+    top: 0;
+    right: 0; } }
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    float: left;
+    width: 105% !important;
+    margin-right: 0 !important;
+    padding-right: 0;
+    padding-left: 0; }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center; }
+
+  .navbar .navbar-nav li a {
+    padding-left: 0; } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .col-md-4 {
     display: inline-block; } }
