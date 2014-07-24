@@ -125,7 +125,7 @@ body, html
 
 .slides
 	.item
-		background-size: cover
+
 
 .slick-slider 
 	position: relative 
@@ -188,7 +188,7 @@ body, html
 
 .slick-slide 
 	float: left
-	height: 100%
+	height: 100% !important
 	min-height: 1px
 	display: none
 
@@ -544,6 +544,11 @@ span.checkbox-78
 
 	
 // MEDIA QUERIES
+@media screen and (max-width:320px)
+	ul.info
+		margin-left: -20px
+		li
+			font-size: 1em
 
 @media screen and (min-width: 320px) and (max-width: 568px)
 	.navbar
@@ -559,8 +564,64 @@ span.checkbox-78
 		top: 0
 		right: 0
 
+	body, html
+		.home
+			.row
+				margin-bottom: 10px
+			.col-md-3
+				width: 100%
+				background: white
+				color: $dark-beige
+				font-size: 1.2em
+				line-height: 1.3em
+				font-weight: 200
+				margin: 5px 0
+				padding: 10px 
+				min-height: 300px
+				blockquote
+					border-left: 0
+				em
+					float: right
+					margin: 0 25px 10px 0
+				.test
+					background: white
+					border: 0
+					color: $sage
+			.col-md-7
+				padding: 0 10px
+				p
+					font-size: 1.2em
+					line-height: 1.3em
+					font-weight: 200
+					margin: 10px 0
 
-	
+	#info
+		padding: 0
+
+	.article-header
+		text-align: center
+	.section-header
+		font-size: 24px
+	#main-content
+		p
+			font-size: 1.2em
+			line-height: 1.3em
+			font-weight: 200
+			margin: 10px 0
+
+	.footer
+		text-align: center
+
+	.footer-nav
+		float: none
+		li
+			display: block
+			text-align: center
+			margin: 10px 0
+
+	.source-org
+		margin-top: 10px
+
 
 
 @media screen and (min-width: 569px) and (max-width:767px)
@@ -583,6 +644,7 @@ span.checkbox-78
 			li
 				a
 					padding-left: 0
+
 
 
 

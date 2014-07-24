@@ -18,7 +18,7 @@
 					  </div><!-- end .item -->
 
 					<div class="item">
-							<img src="<?php the_field('slide_1');?>" class="img-responsive">
+							<img src="<?php the_field('slide_2');?>" class="img-responsive">
 					</div><!-- end .item -->
 
 			</div><!-- end .slides-->
@@ -96,17 +96,17 @@
 				<div class="row">
 					<h1 class="section-header center-block">Client Testimonials</h1>
 
-					<div class="test col-md-3">
+					<div class="test col-md-3 clearfix">
 						<blockquote><?php the_field('test_1'); ?></blockquote>
 						<p><em><?php the_field('client_1'); ?></em></p>
 					</div>
 
-					<div class="test col-md-3">
+					<div class="test col-md-3 clearfix">
 						<blockquote><?php the_field('test_2'); ?></blockquote>
 						<p><em><?php the_field('client_2'); ?></em></p>
 					</div>
 
-					<div class="test col-md-3">
+					<div class="test col-md-3 clearfix">
 						<blockquote><?php the_field('test_3'); ?></blockquote>
 						<p><em><?php the_field('client_3'); ?></em></p>
 					</div>
