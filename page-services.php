@@ -26,28 +26,37 @@ Template Name: Services Page
 					</section> <!-- end article section -->
 
 					<section class="services">
+				<div id="accordion">
 						<div class="row">
 							<div class="col-md-12"><h2><?php the_field('livingroom_hdr'); ?></h2></div>
-							<div class="visual col-md-6" style="background: url('<?php the_field('livingroom_img'); ?>') center center no-repeat; background-size: cover;"></div>
-							<div class="col-md-6"><?php the_field('livingroom_txt'); ?></div>
+							<div class="visual col-md-6 clearfix">
+								<img src="<?php the_field('livingroom_img');?>" class="img-responsive">
+							</div>
+							<div class="col-md-6 clearfix"><?php the_field('livingroom_txt'); ?></div>
 					  </div><!-- end .row -->
 
 						<div class="row">
 							<div class="col-md-12"><h2><?php the_field('kitchen_hdr'); ?></h2></div>
-							<div class="visual col-md-6" style="background: url('<?php the_field('kitchen_img'); ?>') center center no-repeat; background-size: cover;"></div>
-							<div class="col-md-6"><?php the_field('kitchen_txt'); ?></div>
+							<div class="visual col-md-6 clearfix">
+								<img src="<?php the_field('kitchen_img');?>" class="img-responsive">
+							</div>
+							<div class="col-md-6 clearfix"><?php the_field('kitchen_txt'); ?></div>
 						</div><!-- end .row -->
 
 						<div class="row">
 							<div class="col-md-12"><h2><?php the_field('bedroom_hdr'); ?></h2></div>
-							<div class="visual col-md-6" style="background: url('<?php the_field('bedroom_img'); ?>') center center no-repeat; background-size: cover;"></div>
-							<div class="col-md-6"><?php the_field('bedroom_txt'); ?></div>
+							<div class="visual col-md-6 clearfix">
+								<img src="<?php the_field('bedroom_img');?>" class="img-responsive">
+							</div>
+							<div class="col-md-6 clearfix"><?php the_field('bedroom_txt'); ?></div>
 					  </div><!-- end .row -->
 
 						<div class="row">
 							<div class="col-md-12"><h2><?php the_field('bathroom_hdr'); ?></h2></div>
-							<div class="visual col-md-6" style="background: url('<?php the_field('bathroom_img'); ?>') center center no-repeat; background-size: cover;"></div>
-							<div class="col-md-6"><?php the_field('bathroom_txt'); ?></div>
+							<div class="visual col-md-6 clearfix">
+								<img src="<?php the_field('bathroom_img');?>" class="img-responsive">
+							</div>
+							<div class="col-md-6 clearfix"><?php the_field('bathroom_txt'); ?></div>
 					  </div><!-- end .row -->
 
 					  <div class="row">
@@ -56,7 +65,7 @@ Template Name: Services Page
 					  	<p><?php the_field('extras'); ?></p>
 					  	</div><!-- .col-md-12 -->
 					  </div><!-- end .row -->
-								
+							</div><!-- .accordion -->	
 					</section><!-- .services -->
 
 						<footer class="article-footer">
