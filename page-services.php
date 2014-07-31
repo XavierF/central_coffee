@@ -25,47 +25,55 @@ Template Name: Services Page
 						<?php the_content(); ?>
 					</section> <!-- end article section -->
 
+					 <section class="mobile-menu visible-xs">
+					 	<ul>
+					 		<li><a class="btn btn-block" href="#living">Living Room and Common Areas</a></li>
+					 		<li><a class="btn btn-block" href="#kitchen">Kitchens</a></li>
+					 		<li><a class="btn btn-block" href="#bedroom">Bedrooms</a></li>
+					 		<li><a class="btn btn-block" href="#bath">Bathrooms</a></li>
+					 		<li><a class="btn btn-block" href="#extras">Extras</a></li>
+					 	</ul>
+					 </section>
+
 					<section class="services">
-				<div id="accordion">
 						<div class="row">
-							<div class="col-md-12"><h2><?php the_field('livingroom_hdr'); ?></h2></div>
+							<div class="col-md-12 item-hdr"><h2 id="living"><?php the_field('livingroom_hdr'); ?></h2></div>
 							<div class="visual col-md-6 clearfix">
 								<img src="<?php the_field('livingroom_img');?>" class="img-responsive">
 							</div>
-							<div class="col-md-6 clearfix"><?php the_field('livingroom_txt'); ?></div>
+							<div class="list col-md-6 clearfix"><?php the_field('livingroom_txt'); ?></div>
 					  </div><!-- end .row -->
 
 						<div class="row">
-							<div class="col-md-12"><h2><?php the_field('kitchen_hdr'); ?></h2></div>
+							<div class="col-md-12 item-hdr"><h2 id="kitchen" style="padding-top: 75px; margin-top: -75px;"><?php the_field('kitchen_hdr'); ?></h2></div>
 							<div class="visual col-md-6 clearfix">
 								<img src="<?php the_field('kitchen_img');?>" class="img-responsive">
 							</div>
-							<div class="col-md-6 clearfix"><?php the_field('kitchen_txt'); ?></div>
+							<div class="list col-md-6 clearfix"><?php the_field('kitchen_txt'); ?></div>
 						</div><!-- end .row -->
 
 						<div class="row">
-							<div class="col-md-12"><h2><?php the_field('bedroom_hdr'); ?></h2></div>
+							<div class="col-md-12 item-hdr"><h2 id="bedroom" style="padding-top: 75px; margin-top: -75px;"><?php the_field('bedroom_hdr'); ?></h2></div>
 							<div class="visual col-md-6 clearfix">
 								<img src="<?php the_field('bedroom_img');?>" class="img-responsive">
 							</div>
-							<div class="col-md-6 clearfix"><?php the_field('bedroom_txt'); ?></div>
+							<div class="list col-md-6 clearfix"><?php the_field('bedroom_txt'); ?></div>
 					  </div><!-- end .row -->
 
 						<div class="row">
-							<div class="col-md-12"><h2><?php the_field('bathroom_hdr'); ?></h2></div>
+							<div class="col-md-12 item-hdr"><h2 id="bath" style="padding-top: 75px; margin-top: -75px;"><?php the_field('bathroom_hdr'); ?></h2></div>
 							<div class="visual col-md-6 clearfix">
 								<img src="<?php the_field('bathroom_img');?>" class="img-responsive">
 							</div>
-							<div class="col-md-6 clearfix"><?php the_field('bathroom_txt'); ?></div>
+							<div class="list col-md-6 clearfix"><?php the_field('bathroom_txt'); ?></div>
 					  </div><!-- end .row -->
 
 					  <div class="row">
-					  	<div class="col-md-12">
-					  	<h2><?php the_field('extras_hdr'); ?></h2>
+					  	<div class="col-md-12 item-hdr">
+					  	<h2 id="extras" style="padding-top: 75px; margin-top: -75px;"><?php the_field('extras_hdr'); ?></h2>
 					  	<p><?php the_field('extras'); ?></p>
 					  	</div><!-- .col-md-12 -->
 					  </div><!-- end .row -->
-							</div><!-- .accordion -->	
 					</section><!-- .services -->
 
 						<footer class="article-footer">

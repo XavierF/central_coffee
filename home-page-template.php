@@ -10,7 +10,9 @@
 
 <section id="hero" role="hero-unit">
 	<div class="container-fluid">
-		<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+		<div class="tag">
+			<h1><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+		</div>
 					<div class="slides">
 
 						<div class="item">
@@ -24,6 +26,17 @@
 			</div><!-- end .slides-->
 	</div><!-- end .container-fluid -->
 </section> <!-- end hero-unit -->
+
+<section class="mobile-menu visible-xs">
+	<div class="container">
+					 	<ul>
+					 		<li><a class="btn btn-block" href="#quote">As For A Quote</a></li>
+					 		<li><a class="btn btn-block" href="#try-us">Why you should try our cleaning services</a></li>
+					 		<li><a class="btn btn-block" href="#feedback">Client Testimonials</a></li>
+					 	</ul>
+	</div>
+</section>
+
 <section id="info">
 	<div class="container">
 		<div class="row">
@@ -31,7 +44,7 @@
      		<?php the_field('info'); ?>
 			</div>
 			<div class="quote-form col-md-5">	
-				<h3 class="center-block">Ask For a Free Quote</h3>
+				<h3 class="center-block" id="quote" style="padding-top: 75px; margin-top: -75px;">Ask For a Free Quote</h3>
      		<?php echo do_shortcode( '[contact-form-7 id="76" title="Request A Quote"]' ); ?>
 			</div>
 		</div><!-- .row -->
@@ -45,13 +58,11 @@
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					
-
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
 
-									<h3 class="page-title" itemprop="headline"><?php the_title(); ?></h3>
+									<h3 class="page-title" itemprop="headline" id="try-us" style="padding-top: 75px; margin-top: -75px;"><?php the_title(); ?></h3>
 
 								</header> <!-- end article header -->
 
@@ -83,18 +94,10 @@
 
 </section><!-- end main -->
 
-<section>	
-		<div class="row">
-			<div class="col-sm-12">
-				
-		</div>
-	</div>
-</section>
-
 <section id="testimonials">
 	<div class="container">
 				<div class="row">
-					<h1 class="section-header center-block">Client Testimonials</h1>
+					<h1 class="section-header center-block" id="feedback" style="padding-top: 70px; margin-top: -70px;">Client Testimonials</h1>
 
 					<div class="test col-md-3 clearfix">
 						<blockquote><?php the_field('test_1'); ?></blockquote>

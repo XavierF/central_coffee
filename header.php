@@ -34,9 +34,9 @@
 		</head>
 		<body <?php body_class(); ?>>
 			<div class="wrapper">
-				<header class="header" role="banner">
+				<header class="header" role="banner" id="top">
 					<nav role="navigation">
-						<div class="navbar navbar-default">
+						<div class="navbar navbar-default navbar-fixed-top">
 							<div class="container">
 								<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 							

@@ -1,7 +1,9 @@
 			
 <div class="push"></div>
 			</div> <!-- end .wrapper -->
-
+			<!-- <div class="visible-xs">
+				<a data-spy="affix" data-offset-bottom="500" class="affix-bottom btn btn-block" href="#top">back to the top</a>
+			</div> -->
 			<footer class="footer" role="contentinfo">
 
 				<div class="container">

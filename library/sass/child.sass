@@ -3,6 +3,7 @@ $lightGrey: #B3A9AF
 $darkGrey: #272526
 $white: #FFFFFF
 $green: #6AD137
+$superGreen: #94B727
 $lightGreen: #C2D785
 $sage: #B1BBA9
 $lightSage: #C6CBBA
@@ -10,8 +11,13 @@ $dark-beige: #7F7F67
 
 body, html
 	height: 100% !important
+	margin-top: 30px
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
+	a
+		color: $darkGrey
+		&:hover
+			color: darkGrey 
 	.home
 		.row
 			margin-bottom: 10px
@@ -33,9 +39,6 @@ body, html
 				background: $sage
 				border: 1px solid darken($sage, 20%)
 				color: white
-				
-				
-
 
 		.col-md-7
 			padding: 25px 70px 0 0
@@ -45,11 +48,20 @@ body, html
 				font-weight: 200
 				margin: 20px 0
 				color: $darkGrey
+		.checkbox-517
+			span.wpcf7-list-item-label
+				margin-right: 0 !important
+			span
+				&:first-child
+					margin-right: 8px
+				&:nth-child(2)
+					margin-right: 62px
+				&:nth-child(3)
+					margin-right: 60px
+				&:nth-child(4)
+					margin-left: 3px
 
-	a
-		color: $darkGrey
-		&:hover
-			color: darkGrey 
+		
 
 .wrapper
 	min-height: 100%
@@ -59,7 +71,7 @@ body, html
 
 // HEADER
 .navbar-default
-	background: darken($sage, 15%)
+	background: $superGreen
 .navbar
 	.container
 		position: relative
@@ -121,7 +133,17 @@ body, html
 	text-align: center
 
 .tag
-	color: $darkGrey
+	position: absolute
+	top: 39.5%
+	left: 0
+	width: 100%
+	z-index: 1000
+	text-align: center
+	h1
+		color: rgba($superGreen, .88)
+		font-size: 9vw
+		font-weight: 700
+		
 
 .slick-slider 
 	position: relative 
@@ -234,6 +256,7 @@ body, html
 	padding: 0
 	border: none
 	outline: none
+	z-index: 1020
 
 .slick-prev:focus, .slick-next
 	&:focus
@@ -247,8 +270,7 @@ body, html
 		font-family: 'slick' !important
 		font-size: 40px
 		line-height: 1
-		color: white
-		opacity: 0.85
+		color: rgba($superGreen, .88)
 		-webkit-font-smoothing: antialiased
 		-moz-osx-font-smoothing: grayscale
 
@@ -298,7 +320,7 @@ body, html
 			line-height: 0
 			font-size: 0
 			color: $sage
-			background-color:  darken($sage, 10%)
+			background-color:  $superGreen
 			padding: 5px
 			cursor: pointer
 
@@ -353,18 +375,9 @@ body, html
 .article-header
 	margin: 10px 0
 
-
 .entry-content
 	-webkit-font-smoothing: antialiased
 
-
-.visual
-	float: left
-	width: 450px 
-	height: 300px
-	padding: 0
-	text-align: center
-	margin-left: 15px
 
 #main-content
 	p
@@ -396,11 +409,17 @@ ul.info
 			content: "■ "
 			margin-right: 10px
 			vertical-align: top
-			color: darken($sage, 10%)
+			color: $superGreen
 			font-size: .8em
 
-
 .services
+	.visual
+		float: left
+		width: 450px !important
+		height: 300px
+		padding: 0
+		text-align: center
+		margin-left: 15px
 	ul
 		margin-left: 0
 	li
@@ -412,7 +431,7 @@ ul.info
 			content: "■ "
 			margin-right: 10px
 			vertical-align: top
-			color: darken($sage, 10%)
+			color: $superGreen
 			font-size: .8em
 	h4
 		margin: 20px 0 10px
@@ -430,9 +449,8 @@ ul.extras
 			content: "■ "
 			margin-right: 10px
 			vertical-align: top
-			color: darken($sage, 10%)
+			color: $superGreen
 			font-size: .8em
-
 
 
 .archive-title, .entry-title, .page-title
@@ -489,18 +507,6 @@ span.checkbox-78
 	left: 100
 	top: 0
 
-.checkbox-517
-	span.wpcf7-list-item-label
-		margin-right: 0 !important
-	span
-		&:first-child
-			margin-right: 8px
-		&:nth-child(2)
-			margin-right: 62px
-		&:nth-child(3)
-			margin-right: 60px
-		&:nth-child(4)
-			margin-left: 3px
 
 .control-label
 	padding-left: 0
@@ -535,8 +541,6 @@ span.checkbox-78
 	margin: 0
 	a
 		color: white
-
-
 
 	
 // MEDIA QUERIES
@@ -591,6 +595,9 @@ span.checkbox-78
 					line-height: 1.3em
 					font-weight: 200
 					margin: 10px 0
+			ul.info
+				li
+					font-size: 1.2em
 
 	#info
 		padding: 0
@@ -620,9 +627,11 @@ span.checkbox-78
 			float: none
 			margin: 0 0 10px 15px
 			height: 100% !important
-		.col-md-6
+			padding-left: 0
+			padding-right: 15px
+		.list
 			float: none
-			width: 100%
+			width: 100% !important
 			ul
 				margin-left: 0
 				padding-left: 0
@@ -646,18 +655,38 @@ span.checkbox-78
 		margin-top: 10px
 
 @media screen and (min-width: 320px) and (max-width: 568px) and (orientation : portrait)
-	.services
+
+	body, html
+		ul.info
+			li
+				font-size: 1em
+				list-style-position: inside
+				padding-left: 15px
+				text-indent: -1.2em
+
+	ul.services
+		margin-left: 4px
 		li
 			font-size: 1.2em
-			&:before
-				margin-right: 3px
+			list-style-position: inside
+			padding-left: 15px
+			text-indent: -1.2em
+
+	.services
 		.visual
-			width: 91.5% !important
+			padding-left: 15px
+			padding-right: 15px 
+			margin-left: 0
+			width: 100% !important
 
 
 	ul.extras
+		margin-left: 4px
 		li
 			font-size: 1.2em
+			list-style-position: inside
+			padding-left: 15px
+			text-indent: -1.2em
 			&:before
 				margin-right: 3px
 				
@@ -665,13 +694,81 @@ span.checkbox-78
 
 
 @media screen and (max-width: 568px) and (orientation : landscape)
+
+	body, html
+		ul.info
+			li
+				font-size: 1.2em
+				list-style-position: outside
 	.services
 		.visual
 			width: 95% !important
 
 
 
+
 @media screen and (min-width: 569px) and (max-width:767px)
+
+	body, html
+		.home
+			.row
+				margin-bottom: 10px
+			.col-md-3
+				width: 100%
+				background: white
+				color: $dark-beige
+				font-size: 1.2em
+				line-height: 1.3em
+				font-weight: 200
+				margin: 5px 0
+				padding: 10px 
+				min-height: 300px
+				blockquote
+					border-left: 0
+				em
+					float: right
+					margin: 0 25px 10px 0
+				.test
+					background: white
+					border: 0
+					color: $sage
+			.col-md-7
+				padding: 0 10px
+				width: 50%
+				float: left
+				p
+					font-size: 1.2em
+					line-height: 1.3em
+					font-weight: 200
+					margin: 10px 0
+	ul.info
+		li
+			font-size: 1.2em 
+
+
+	.quote-form
+		width: 50%
+		float: right
+
+
+	.col-md-12
+		h2
+			font-size: 1.5em
+
+
+	.services
+		.visual
+			width: 50% !important
+			height: 100%
+			float: left !important
+		.list
+			width: 47.4%
+			padding-left: 10px
+			float: right
+			ul
+				padding-left: 0
+				li
+					font-size: 1.2em
 
 @media screen and (max-width:767px)
 
@@ -692,10 +789,91 @@ span.checkbox-78
 				a
 					padding-left: 0
 
+	.mobile-menu
+		padding: 20px 0 0
+		ul
+			margin-left: 0
+			margin-bottom: 0
+			padding-left: 0
+			li
+				margin-bottom: 7px
+				list-style: none
+				a.btn
+					font-size: 1em
+					font-weight: 300
+					padding: 10px
+					color: $superGreen
+					border: 1px solid $superGreen
+					line-height: 1.2em
+					font-weight: 500
+					display: block
+	
+
 
 
 
 @media screen and (min-width: 768px) and (max-width:991px)
+	body, html
+		.home
+			.row
+				margin-bottom: 10px
+			.col-md-3
+				width: 100%
+				background: white
+				color: $dark-beige
+				font-size: 1.2em
+				line-height: 1.3em
+				font-weight: 200
+				margin: 5px 0
+				padding: 10px 
+				min-height: 300px
+				blockquote
+					border-left: 0
+				em
+					float: right
+					margin: 0 25px 10px 0
+				.test
+					background: white
+					border: 0
+					color: $sage
+			.col-md-7
+				padding: 0 10px
+				width: 50%
+				float: left
+				p
+					font-size: 1.2em
+					line-height: 1.3em
+					font-weight: 200
+					margin: 10px 0
+	ul.info
+		li
+			font-size: 1.2em 
+
+
+	.quote-form
+		width: 50%
+		float: right
+	.container
+		max-width: 97.652% !important
+
+	.col-md-12
+		h2
+			font-size: 1.5em
+
+	.services
+		.visual
+			width: 50% !important
+			height: 100%
+			float: left !important
+		.list
+			width: 48%
+			padding-left: 10px
+			padding-right: 0
+			float: right
+			ul
+				padding-left: 0
+				li
+					font-size: 1.2em
 
 
 	.col-md-4
