@@ -37,7 +37,7 @@ Template Name: Services Page
 
 					<section class="services">
 						<div class="row">
-							<div class="col-md-12 item-hdr"><h2 id="living"><?php the_field('livingroom_hdr'); ?></h2></div>
+							<div class="col-md-12 item-hdr clearfix"><h2 id="living"><?php the_field('livingroom_hdr'); ?></h2></div>
 							<div class="visual col-md-6 clearfix">
 								<img src="<?php the_field('livingroom_img');?>" class="img-responsive">
 							</div>
@@ -45,7 +45,7 @@ Template Name: Services Page
 					  </div><!-- end .row -->
 
 						<div class="row">
-							<div class="col-md-12 item-hdr"><h2 id="kitchen" style="padding-top: 75px; margin-top: -75px;"><?php the_field('kitchen_hdr'); ?></h2></div>
+							<div class="col-md-12 item-hdr clearfix"><h2 id="kitchen"><?php the_field('kitchen_hdr'); ?></h2></div>
 							<div class="visual col-md-6 clearfix">
 								<img src="<?php the_field('kitchen_img');?>" class="img-responsive">
 							</div>
@@ -53,7 +53,7 @@ Template Name: Services Page
 						</div><!-- end .row -->
 
 						<div class="row">
-							<div class="col-md-12 item-hdr"><h2 id="bedroom" style="padding-top: 75px; margin-top: -75px;"><?php the_field('bedroom_hdr'); ?></h2></div>
+							<div class="col-md-12 item-hdr clearfix"><h2 id="bedroom"><?php the_field('bedroom_hdr'); ?></h2></div>
 							<div class="visual col-md-6 clearfix">
 								<img src="<?php the_field('bedroom_img');?>" class="img-responsive">
 							</div>
@@ -61,7 +61,7 @@ Template Name: Services Page
 					  </div><!-- end .row -->
 
 						<div class="row">
-							<div class="col-md-12 item-hdr"><h2 id="bath" style="padding-top: 75px; margin-top: -75px;"><?php the_field('bathroom_hdr'); ?></h2></div>
+							<div class="col-md-12 item-hdr clearfix"><h2 id="bath"><?php the_field('bathroom_hdr'); ?></h2></div>
 							<div class="visual col-md-6 clearfix">
 								<img src="<?php the_field('bathroom_img');?>" class="img-responsive">
 							</div>
@@ -69,7 +69,7 @@ Template Name: Services Page
 					  </div><!-- end .row -->
 
 					  <div class="row">
-					  	<div class="col-md-12 item-hdr">
+					  	<div class="col-md-12 item-hdr clearfix">
 					  	<h2 id="extras" style="padding-top: 75px; margin-top: -75px;"><?php the_field('extras_hdr'); ?></h2>
 					  	<p><?php the_field('extras'); ?></p>
 					  	</div><!-- .col-md-12 -->

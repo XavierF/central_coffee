@@ -39,7 +39,6 @@ body, html
 				background: $sage
 				border: 1px solid darken($sage, 20%)
 				color: white
-
 		.col-md-7
 			padding: 25px 70px 0 0
 			p
@@ -60,9 +59,6 @@ body, html
 					margin-right: 60px
 				&:nth-child(4)
 					margin-left: 3px
-
-		
-
 .wrapper
 	min-height: 100%
 	height: auto !important
@@ -72,6 +68,7 @@ body, html
 // HEADER
 .navbar-default
 	background: $superGreen
+	border-bottom: 1px solid darken($superGreen, 10%)
 .navbar
 	.container
 		position: relative
@@ -92,6 +89,7 @@ body, html
 	a.navbar-brand
 		line-height: 30px
 		color: white !important
+		font-weight: 500
 		&:hover
 			background-color: transparent
 	.navbar-nav
@@ -143,8 +141,7 @@ body, html
 		color: rgba($superGreen, .88)
 		font-size: 9vw
 		font-weight: 700
-		
-
+	
 .slick-slider 
 	position: relative 
 	display: block 
@@ -340,7 +337,7 @@ body, html
 				font-size: .8em
 				line-height: 20px
 				text-align: center
-				color: darken($sage, 10%)
+				color: darken($superGreen, 10%)
 				opacity: 0.25
 				-webkit-font-smoothing: antialiased
 				-moz-osx-font-smoothing: grayscale
@@ -374,10 +371,12 @@ body, html
 
 .article-header
 	margin: 10px 0
+	color: darken($superGreen, 20%)
 
 .entry-content
 	-webkit-font-smoothing: antialiased
-
+	h2
+		color: darken($superGreen, 5%)
 
 #main-content
 	p
@@ -413,6 +412,8 @@ ul.info
 			font-size: .8em
 
 .services
+	h2
+		color: darken($superGreen, 5%)
 	.visual
 		float: left
 		width: 450px !important
@@ -422,17 +423,17 @@ ul.info
 		margin-left: 15px
 	ul
 		margin-left: 0
-	li
-		font-size: 1.25em
-		font-weight: 300
-		margin-bottom: 4px
-		list-style: none
-		&:before
-			content: "■ "
-			margin-right: 10px
-			vertical-align: top
-			color: $superGreen
-			font-size: .8em
+		li
+			font-size: 1.25em
+			font-weight: 300
+			margin-bottom: 4px
+			list-style: none
+			&:before
+				content: "■ "
+				margin-right: 10px
+				vertical-align: top
+				color: $superGreen
+				font-size: .8em
 	h4
 		margin: 20px 0 10px
 	p
@@ -452,14 +453,13 @@ ul.extras
 			color: $superGreen
 			font-size: .8em
 
-
 .archive-title, .entry-title, .page-title
-	color: black
+	color: darken($superGreen, 5%)
 	margin: 0
 
 .page-title, .entry-title, .archive-title, .posts-title, .excerpt-read-more
 	a
-		color: black
+		color: darken($superGreen, 20%)
 
 // FORM
 .quote-form
@@ -467,61 +467,151 @@ ul.extras
 	padding-top: 10px
 	padding-bottom: 10px
 
-.wpcf7-form
-	@extend.form-horizontal
+	.wpcf7-form
+		@extend.form-horizontal
 
-.form-horizontal .form-group
-	margin-left: 0
-	marging-right: 0 !important
-	padding: 0 20px 0 5px
-	label
+	.form-horizontal .form-group
 		margin-left: 0
-	.heading
-		margin-left: 3px
+		marging-right: 0 !important
+		padding: 0 20px 0 5px
+		label
+			margin-left: 0
+		.heading
+			margin-left: 3px
 
-span.wpcf7-list-item
-	&:first-child
-		margin-left: 3px
+	span.wpcf7-list-item
+		&:first-child
+			margin-left: 3px
 
-span.wpcf7-form-control-wrap
-	width: 100%
+	span.wpcf7-form-control-wrap
+		width: 100%
+		display: block
+	.wpcf7-text
+		height: 30px
+		padding: 8px
+		width: 100%
+		border: 1px solid darken($sage, 10%)
+		border-radius: 4px
 
-.wpcf7-text
-	height: 30px
-	padding: 8px
-	width: 100%
-	border: 1px solid darken($sage, 10%)
+	.wpcf7-textarea
+		height: 150px
+		padding: 5px
+		width: 100%
+		border: 1px solid darken($sage, 10%)
+		border-radius: 4px
 
-.wpcf7-textarea
-	height: 150px
-	padding: 5px
-	width: 100%
-	border: 1px solid darken($sage, 10%)
+	span.wpcf7-radio options
+		width: 100%
 
+	span.checkbox-78
+		position: relative
+		left: 100
+		top: 0
 
-span.wpcf7-radio options
-	width: 100%
+	.control-label
+		padding-left: 0
 
-span.checkbox-78
-	position: relative
-	left: 100
-	top: 0
+	.btn
+		display: block
+	.wpcf7-submit
+		width: 100%
+		background: $green
+		border: 1px solid desaturate($green, 10%)
+		padding: 10px
+		border-radius: 4px
+		color: $white 
+		font-size: 2em
+		&:hover
+			background: darken($green, 10%)
 
+.page-id-13, .page-id-14, .page-id-11, .page-id-7
+	.form-group
+		margin-left: 0
+		marging-right: 0 !important
+		padding: 0 20px 0 5px
+		max-width: 355px
+		label
+			margin-left: 0
+		.heading
+			margin-left: 3px
+	span.wpcf7-list-item
+		&:first-child
+			margin-left: 3px
+	span.wpcf7-form-control-wrap
+		width: 325px
+	.wpcf7-text
+		height: 30px
+		padding: 8px
+		width: 100%
+		border: 1px solid darken($sage, 10%)
+		border-radius: 4px
+	.wpcf7-textarea
+		height: 150px
+		padding: 5px
+		width: 100%
+		border: 1px solid darken($sage, 10%)
+		border-radius: 4px
 
-.control-label
-	padding-left: 0
+	span.wpcf7-form-control-wrap
+		width: 100%
+		display: block
 
-.btn
-	display: block
-.wpcf7-submit
-	width: 100%
-	background: $green
-	border: 1px solid desaturate($green, 10%)
-	border-radius: 0
-	color: $white 
-	&:hover
-		background: darken($green, 10%)
+	.radio-161, .radio-600
+		margin-right: 0 !important
+		span
+			margin-right: 16px
 
+	.radio-105
+		margin-right: 0 !important
+		span
+			margin-right: 11px
+	.checkbox-517
+		span.wpcf7-list-item-label
+			margin-right: 0 !important
+		span
+			&:first-child
+				margin-right: 14px
+			&:nth-child(2)
+				margin-right: 66px
+			&:nth-child(3)
+				margin-right: 0
+			&:nth-child(4)
+				margin-left: 3px
+				margin-right: 5px
+			&:nth-child(5)
+				margin-right: 5px
+	.radio-786
+		span
+			.last
+				margin-left: 3px
+
+	span.wpcf7-radio options
+		width: 100%
+
+	span.checkbox-78
+		position: relative
+		left: 100
+		top: 0
+
+	.control-label
+		padding-left: 0
+
+	.btn
+		display: block
+		text-align: left
+		margin-bottom: 20px
+		padding: 0
+	.wpcf7-submit
+		width: 335px
+		display: block
+		background: $green
+		border: 1px solid desaturate($green, 10%)
+		padding: 8px
+		border-radius: 4px
+		color: $white 
+		font-size: 2em
+		&:hover
+			background: darken($green, 10%)
 
 // FOOTER
 
@@ -541,8 +631,8 @@ span.checkbox-78
 	margin: 0
 	a
 		color: white
+		padding: 0 10px 0 10px
 
-	
 // MEDIA QUERIES
 @media screen and (max-width:320px)
 	ul.info
@@ -599,6 +689,22 @@ span.checkbox-78
 				li
 					font-size: 1.2em
 
+	.tag
+		h1
+			font-size: 2em
+			font-weight: 700
+			color: $superGreen
+			margin-top: 10px
+
+	.slick-prev, .slick-next
+		&:before
+			font-size: 30px
+			color: $superGreen
+	.slick-prev
+		left: 20px
+	.slick-next
+		right: 20px
+
 	#info
 		padding: 0
 
@@ -620,7 +726,11 @@ span.checkbox-78
 			text-align: center
 			.col-md-12
 				width: max-content
+
 	.services
+		.item-hdr
+			padding-top: 75px
+			margin-top: -75px
 		p
 			font-size: 1.2em
 		.visual
@@ -632,14 +742,27 @@ span.checkbox-78
 		.list
 			float: none
 			width: 100% !important
-			ul
-				margin-left: 0
-				padding-left: 0
+		ul
+			margin-left: 0
+			padding-left: 20px
+			li
+				list-style-position: inside
+				padding-left: -15px
+				text-indent: -1.2em
+		ul.extras
+			margin-left: 0
+			padding-left: 4px
+			li
+				font-size: 1.2em
+				list-style-position: inside
+				padding-left: 15px
+				text-indent: -1.2em
+				&:before
+					margin-right: 3px
 
 	.col-md-12
 		h2
 			font-size: 1.2em
-
 
 	.footer
 		text-align: center
@@ -658,19 +781,12 @@ span.checkbox-78
 
 	body, html
 		ul.info
+			margin-left: -25px
 			li
 				font-size: 1em
 				list-style-position: inside
 				padding-left: 15px
 				text-indent: -1.2em
-
-	ul.services
-		margin-left: 4px
-		li
-			font-size: 1.2em
-			list-style-position: inside
-			padding-left: 15px
-			text-indent: -1.2em
 
 	.services
 		.visual
@@ -679,33 +795,196 @@ span.checkbox-78
 			margin-left: 0
 			width: 100% !important
 
+	#main
+		padding: 0
 
-	ul.extras
-		margin-left: 4px
-		li
-			font-size: 1.2em
-			list-style-position: inside
-			padding-left: 15px
-			text-indent: -1.2em
-			&:before
-				margin-right: 3px
-				
-		
+	.quote-form
+		.radio-894
+			span
+				&:first-child
+					margin-right: 50px
+				&:nth-child(3)
+					margin-left: 3px
+					margin-right: 43px
 
+		.checkbox-517
+			width: 100%
+			display: block
+			.wpcf7-form-control
+				margin-right: 0
+			span.wpcf7-list-item-label
+				margin-right: 0 !important
+			span
+				span.first
+					margin-right: 82px
+				&:first-child
+					margin-left: .3em
+				&:nth-child(2)
+					margin-right: 0 !important
+				&:nth-child(3)
+					margin-right: 60px
+				&:nth-child(4)
+					margin-left: 10px
+					margin-right: 0
+				&:nth-child(5)
+					margin-right: 14px
+
+		.radio-786
+			span
+				.last
+					margin-left: 3px
+
+	.page-id-11, .page-id-13, .page-id-14, .page-id-7
+		.form-group
+			padding: 0
+			width: 95%
+			margin-right: 0
+			label
+				margin-left: 0
+			.heading
+				margin-left: 3px
+		.radio-894
+			span
+				&:first-child
+					margin-right: 50px
+				&:nth-child(3)
+					margin-left: 3px
+					margin-right: 43px
+
+		.radio-161, .radio-600
+			.wpcf7-radio
+				margin-right: 0 !important
+				width: 100%
+				display: block
+			span
+				margin-right: 8px
+		.radio-105
+			.wpcf7-radio
+				margin-right: 0 !important
+				width: 100%
+				display: block
+			span
+				margin-right: 2px
+		.checkbox-517
+			width: 100%
+			display: block
+			.wpcf7-form-control
+				margin-right: 0
+			span.wpcf7-list-item-label
+				margin-right: 0 !important
+			span
+				span.first
+					margin-right: 82px
+				&:first-child
+					margin-left: .3em
+				&:nth-child(2)
+					margin-right: 0 !important
+				&:nth-child(3)
+					margin-right: 58px
+				&:nth-child(4)
+					margin-left: 5px
+					margin-right: 0
+				&:nth-child(5)
+					margin-right: 14px
+		.wpcf7-submit
+			width: 275px !important
 
 @media screen and (max-width: 568px) and (orientation : landscape)
-
 	body, html
 		ul.info
 			li
 				font-size: 1.2em
 				list-style-position: outside
+
+	.tag
+		top: 44%
+		h1
+			font-size: 2.5em
 	.services
 		.visual
 			width: 95% !important
 
+	.quote-form
+		.radio-894
+			span
+				&:first-child
+					margin-right: 10px
+				&:nth-child(2)
+					margin-right: 10px
+				&:nth-child(3)
+					margin-right: 10px
+		.radio-161
+			span
+				&:first-child
+					margin-right: 15px
+				&:nth-child(2)
+					margin-right: 14px
+		.radio-600
+			span
+				&:first-child
+					margin-right: 15px
 
+		.radio-105
+			span
+				&:first-child
+					margin-right: 10px
+				&:nth-child(2)
+					margin-right: 10px
+		.checkbox-517
+			width: 100%
+			display: block
+			.wpcf7-form-control
+				margin-right: 0
+			span.wpcf7-list-item-label
+				margin-right: 0 !important
+			span
+				span.first
+					margin-right: 70px
+				&:first-child
+					margin-right: 70px !important
+				&:nth-child(2)
+					margin-right: 72px !important
+				&:nth-child(3)
+					margin-right: 70px !important
+				&:nth-child(4)
+					margin-right: 64px !important
+				&:nth-child(5)
+					margin-right: 10px
+		.radio-786
+			span
+				.last
+					margin-left: 10px
 
+	.page-id-11, .page-id-13, .page-id-14, .page-id-7
+		.entry-content
+			p
+				text-align: center
+		.form-group
+			padding: 0
+			width: 100%
+			margin: 10px auto
+			label
+				margin-left: 0
+			.heading
+				margin-left: 3px
+		.radio-894
+			span.wpcf7-form-control
+				width: 100%
+				display: block
+			span
+				&:first-child
+					margin-right: 2px
+				&:nth-child(2)
+					margin-right: 2px
+				&:nth-child(3)
+					margin-right: 2px
+
+		.btn
+			text-align: center !important
+
+		.wpcf7-submit
+			width: 70%
+			margin: 10px auto
 
 @media screen and (min-width: 569px) and (max-width:767px)
 
@@ -741,21 +1020,44 @@ span.checkbox-78
 					line-height: 1.3em
 					font-weight: 200
 					margin: 10px 0
+
+	.entry-content
+		h2
+			text-align: center
+
+	.services
+		ul
+			margin-left: 20px
+			li
+				list-style-position: inside
+				padding-left: -15px
+				text-indent: -1.2em
 	ul.info
 		li
 			font-size: 1.2em 
-
+	.page-title
+		text-align: center
 
 	.quote-form
 		width: 50%
 		float: right
+	.page-id-11, .page-id-13, .page-id-14, .page-id-7
+		.entry-content
+			p
+				text-align: center
+		.form-group
+			padding: 0
+			width: 100%
+			margin: 10px auto
+			label
+				margin-left: 0
 
-
+		.wpcf7-submit
+			width: 355px
+			margin: 10px auto
 	.col-md-12
 		h2
 			font-size: 1.5em
-
-
 	.services
 		.visual
 			width: 50% !important
@@ -770,7 +1072,14 @@ span.checkbox-78
 				li
 					font-size: 1.2em
 
+
 @media screen and (max-width:767px)
+
+	.navbar-default
+		.navbar-toggle
+			.icon-bar
+				background: white
+
 
 	.navbar-collapse
 		float: left
@@ -808,11 +1117,7 @@ span.checkbox-78
 					font-weight: 500
 					display: block
 	
-
-
-
-
-@media screen and (min-width: 768px) and (max-width:991px)
+@media screen and (min-width: 768px) and (max-width:991px) 
 	body, html
 		.home
 			.row
@@ -849,7 +1154,6 @@ span.checkbox-78
 		li
 			font-size: 1.2em 
 
-
 	.quote-form
 		width: 50%
 		float: right
@@ -875,9 +1179,130 @@ span.checkbox-78
 				li
 					font-size: 1.2em
 
-
 	.col-md-4
 		display: inline-block
+
+@media screen and (min-width: 768px) and (max-width: 1024px) 
+	.services
+		ul
+			margin-left: 20px
+			li
+				list-style-position: inside
+				padding-left: -15px
+				text-indent: -1.2em
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait)
+	.page-title
+		text-align: center
+	.quote-form
+		.checkbox-517
+			width: 100%
+			display: block
+			.wpcf7-form-control
+				margin-right: 0
+			span.wpcf7-list-item-label
+				margin-right: 0 !important
+			span
+				span.first
+					margin-right: 95px !important
+					margin-left: 7px
+				&:first-child
+					margin-right: 73px !important
+				&:nth-child(2)
+					margin-right: 73px !important
+				&:nth-child(3)
+					margin-right: 72px !important
+				&:nth-child(4)
+					margin-right: 64px !important
+				&:nth-child(5)
+					margin-right: 25px
+		.radio-786
+			span
+				.last
+					margin-left: 3px
+
+	.page-id-11, .page-id-13, .page-id-14, .page-id-7
+		.entry-content
+			p
+				text-align: center
+		.form-group
+			padding: 0
+			width: 100%
+			margin: 10px auto
+			label
+				margin-left: 0
+			.heading
+				margin-left: 3px
+		.wpcf7-submit
+			width: 355px
+			margin: 10px auto
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape)
+	.page-title
+		text-align: center
+	.quote-form
+		.radio-894
+			span.wpcf7-checkbox
+				width: 100%
+				display: block
+	
+		.radio-161
+			span
+				&:first-child
+					margin-right: 15px
+				&:nth-child(2)
+					margin-right: 14px
+		.radio-600
+			span
+				&:first-child
+					margin-right: 15px
+
+		.radio-105
+			span
+				&:first-child
+					margin-right: 10px
+				&:nth-child(2)
+					margin-right: 10px
+		.checkbox-517
+			width: 100%
+			display: block
+			.wpcf7-form-control
+				margin-right: 0
+			span.wpcf7-list-item-label
+				margin-right: 0 !important
+
+
+	.page-id-11, .page-id-13, .page-id-14, .page-id-7
+
+		.entry-content
+			p
+				text-align: center
+		.form-group
+			padding: 0
+			width: 100%
+			margin: 10px auto
+			label
+				margin-left: 0
+			.heading
+				margin-left: 3px
+		.radio-894
+			span.wpcf7-form-control
+				width: 100%
+				display: block
+			span
+				&:first-child
+					margin-right: 2px
+				&:nth-child(2)
+					margin-right: 2px
+				&:nth-child(3)
+					margin-right: 2px
+
+		.btn
+			text-align: center !important
+
+		.wpcf7-submit
+			width: 355px
+			margin: 10px auto
+
 
 @media screen and (max-width: 1199px)
 

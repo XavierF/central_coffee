@@ -30,12 +30,12 @@
 <section class="mobile-menu visible-xs">
 	<div class="container">
 					 	<ul>
-					 		<li><a class="btn btn-block" href="#quote">As For A Quote</a></li>
+					 		<li><a class="btn btn-block" href="#quote">Ask For A Free Quote</a></li>
 					 		<li><a class="btn btn-block" href="#try-us">Why you should try our cleaning services</a></li>
 					 		<li><a class="btn btn-block" href="#feedback">Client Testimonials</a></li>
 					 	</ul>
-	</div>
-</section>
+	</div><!-- .container -->
+</section><!-- .mobile-menu -->
 
 <section id="info">
 	<div class="container">
@@ -43,10 +43,10 @@
 			<div class="col-md-7">	
      		<?php the_field('info'); ?>
 			</div>
-			<div class="quote-form col-md-5">	
+			<div class="quote-form col-md-5"><!-- begin form -->
 				<h3 class="center-block" id="quote" style="padding-top: 75px; margin-top: -75px;">Ask For a Free Quote</h3>
      		<?php echo do_shortcode( '[contact-form-7 id="76" title="Request A Quote"]' ); ?>
-			</div>
+			</div><!-- .quote-form -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 </section>
@@ -61,14 +61,12 @@
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
-
 									<h3 class="page-title" itemprop="headline" id="try-us" style="padding-top: 75px; margin-top: -75px;"><?php the_title(); ?></h3>
-
 								</header> <!-- end article header -->
 
 								<div class="entry-content clearfix" itemprop="articleBody">
 									<?php the_content(); ?>
-								</div> <!-- end article section -->
+								</div> <!-- end entry-content -->
 
 							</article> <!-- end article -->
 
