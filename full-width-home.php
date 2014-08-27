@@ -1,8 +1,8 @@
 <?php
 /**
- * Full Content Template
+ * Full Content Home
  *
-   Template Name:  Full Width Page
+   Template Name:  Full Width Home
  *
  */
 ?>

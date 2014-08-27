@@ -266,6 +266,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/js\/libs\/bootstrap.min.3.2.0.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/library\/js\/libs\/bootstrap.min.3.2.0.js",
+		"outputAbbreviatedPath": "\/library\/js\/libs\/min\/bootstrap.min.3.2.0-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/library\/js\/libs\/bootstrap.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -277,12 +288,23 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/library\/js\/libs\/bootstrap.min.old.js": {
+	"\/library\/js\/libs\/min\/bootstrap.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/library\/js\/libs\/min\/bootstrap.min-min.js",
+		"outputAbbreviatedPath": "\/library\/js\/libs\/min\/min\/bootstrap.min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/library\/js\/libs\/min\/bootstrap.min.old-min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/library\/js\/libs\/bootstrap.min.old.js",
-		"outputAbbreviatedPath": "\/library\/js\/libs\/min\/bootstrap.min.old-min.js",
+		"inputAbbreviatedPath": "\/library\/js\/libs\/min\/bootstrap.min.old-min.js",
+		"outputAbbreviatedPath": "\/library\/js\/libs\/min\/min\/bootstrap.min.old-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1338,7 +1360,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "builder",
+	"displayValue": "central_coffee",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_darkGray"
 	},
