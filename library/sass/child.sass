@@ -5,12 +5,32 @@ $white: #FFFFFF
 
 body, html
 	height: 100% !important
-	margin-top: 30px
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
 	a
-
+		color: $darkGrey
+		&:hover
+			color: $darkGrey
 	.home
+		a.navbar-brand
+			width: 700px
+			height: 270px
+			margin: 15px auto 0 !important
+			padding: 0
+			display: block
+			float: none
+			color: $darkGrey
+			&:hover
+				background-color: transparent
+			background: url('../images/cc_hdr_logo_main.png') center  center no-repeat
+			background-size: cover
+		.navbar
+			h3
+				display: block
+				margin-top: 0
+				&:first-child
+					padding-right: 0
+
 
 .wrapper
 	min-height: 100%
@@ -20,10 +40,12 @@ body, html
 
 // HEADER
 .navbar-default
+	text-align: center
 
 .navbar
 	.container
 		position: relative
+		text-align: center
 	.navbar-toggle
 		border: none
 		margin-top: 11px
@@ -37,39 +59,52 @@ body, html
 		.icon-bar
 			height: 3px
 			border-radius: 0
-
 	a.navbar-brand
-		line-height: 30px
+		width: 700px
+		height: 140px
+		margin: 15px auto !important
+		padding: 0
+		display: block
+		float: none
 		color: $darkGrey
 		font-weight: 500
 		&:hover
 			background-color: transparent
+		background: url('../images/cc_hdr_logo.png') center  center no-repeat
+		background-size: cover
+
+	h3
+		display: inline-block
+		margin-top: 0
+		&:first-child
+			padding-right: 20px
+	
 	.navbar-nav
-		float: right
-	.navbar-nav
+		width: 488px
+		margin: 0 auto
+		float: none !important
 		li
 			a
-				color: white
+				color: $darkGrey
 				-webkit-font-smoothing: antialiased
-				padding: 20px 15px
+				padding: 20px 30px
 				font-size: 16px
 				font-weight: 300
 				&:hover
-					color: white
+					color: $darkGrey
 					background: rgba(0, 0, 0, .1)
 				&:focus
-					color: white
+					color: $darkGrey
 					background: rgba(0, 0, 0, .1)
 					outline: 0
 			&.active
 				a
-					color: white
-					background: rgba(0, 0, 0, .1)
+					color: $darkGrey
 					&:hover
-						color: white
+						color: $darkGrey
 						background: rgba(0, 0, 0, .2)
 					&:focus
-						color: white
+						color: $darkGrey
 //			&:last-child
 //				a
 //					padding: 20px 0 20px 15px
@@ -124,8 +159,6 @@ body, html
 #main-content
 
 // FORM
-
-
 
 
 // FOOTER
@@ -195,12 +228,21 @@ body, html
 @media screen and (min-width: 569px) and (max-width:767px)
 
 
-	
-
-
 
 
 @media screen and (max-width:767px)
+
+	.home
+		a.navbar-brand
+			width: 90% !important
+			background-size: contain !important
+
+	a.navbar-brand
+		width: 90% !important	
+		background-size: contain !important
+				
+
+
 
 
 	

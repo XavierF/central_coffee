@@ -28,31 +28,26 @@
 			<?php wp_head(); ?>
 			<!-- end of wordpress head -->
 			<!-- drop Google Analytics Here -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-53627640-1', 'auto');
-  ga('send', 'pageview');
-</script>
+
 			<!-- end analytics -->
 </head>
 		<body <?php body_class(); ?>>
 			<div class="wrapper">
 				<header class="header" role="banner" id="top">
 					<nav role="navigation">
-						<div class="navbar navbar-default navbar-fixed-top">
+						<div class="navbar navbar-default">
 							<div class="container">
+								
+							<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
+							<a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank"><h3>1696 Hayes Street, San Francisco, CA 94117</h3></a><a href="tel:+4159222008" class="phone"><h3>(415) 922 - 2008</h3></a>
+							<!--<a href="https://www.google.com/maps/place/1696+Hayes+St,+San+Francisco,+CA+94117/@37.7751568,-122.4443275,18z/data=!4m2!3m1!1s0x808580b28170d723:0xc411367e70f31ed0" target="_blank"><h3>1696 Hayes Street, San Francisco, CA 94117</h3></a> <a href="tel:+4159222008" class="phone"><h3>(415) 922 - 2008</h3></a> -->
 								<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-							
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
-									<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
-								
+							
 								<div class="navbar-collapse collapse navbar-responsive-collapse">
 									<?php bones_main_nav(); ?>
 								</div><!-- end .navbar-collapse -->

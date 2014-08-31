@@ -65,6 +65,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/full-width-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/full-width-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/full-width-page.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -88,24 +97,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/header.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/home-page-template-demo.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/home-page-template-demo.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/home-page-template.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/home-page-template.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -200,68 +191,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/library\/images\/bath.jpeg": {
-		"fileType": 16384,
+	"\/library\/images\/cc_hdr_logo.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6.42086e+06,
-		"inputAbbreviatedPath": "\/library\/images\/bath.jpeg",
-		"outputAbbreviatedPath": "\/library\/images\/bath.jpeg",
+		"initialSize": 24189,
+		"inputAbbreviatedPath": "\/library\/images\/cc_hdr_logo.png",
+		"outputAbbreviatedPath": "\/library\/images\/cc_hdr_logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/bedroom-home.jpg": {
-		"fileType": 16384,
+	"\/library\/images\/cc_hdr_logo_main.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2.37695e+06,
-		"inputAbbreviatedPath": "\/library\/images\/bedroom-home.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/bedroom-home.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/bedroom.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.37695e+06,
-		"inputAbbreviatedPath": "\/library\/images\/bedroom.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/bedroom.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/kitchen.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4.64991e+06,
-		"inputAbbreviatedPath": "\/library\/images\/kitchen.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/kitchen.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/living-home.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4.63276e+06,
-		"inputAbbreviatedPath": "\/library\/images\/living-home.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/living-home.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/living.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4.63276e+06,
-		"inputAbbreviatedPath": "\/library\/images\/living.jpg",
-		"outputAbbreviatedPath": "\/library\/images\/living.jpg",
+		"initialSize": 59360,
+		"inputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main.png",
+		"outputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1234,7 +1181,7 @@
 		"outputAbbreviatedPath": "\/library\/css\/child.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
@@ -1244,15 +1191,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-custom.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/page-services.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/page-services.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
