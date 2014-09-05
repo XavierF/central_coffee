@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Rokkitt:400,700|Oswald:400,700,300");
 body, html {
   height: 100% !important;
   -webkit-font-smoothing: antialiased;
@@ -9,26 +10,10 @@ body a, html a {
 body a:hover, html a:hover {
   color: #272526;
 }
-body .home a.navbar-brand, html .home a.navbar-brand {
-  width: 700px;
-  height: 270px;
-  margin: 15px auto 0 !important;
-  padding: 0;
-  display: block;
-  float: none;
-  color: #272526;
-  background: url("../images/cc_hdr_logo_main.png") center center no-repeat;
-  background-size: cover;
-}
-body .home a.navbar-brand:hover, html .home a.navbar-brand:hover {
-  background-color: transparent;
-}
-body .home .navbar h3, html .home .navbar h3 {
-  display: block;
-  margin-top: 0;
-}
-body .home .navbar h3:first-child, html .home .navbar h3:first-child {
-  padding-right: 0;
+body .home .page-title, html .home .page-title {
+  color: #781a03;
+  text-align: center;
+  font-size: 4.5em;
 }
 
 .wrapper {
@@ -38,10 +23,20 @@ body .home .navbar h3:first-child, html .home .navbar h3:first-child {
   margin: 0 auto -106px;
 }
 
-.navbar-default {
-  text-align: center;
+.header {
+  background: #e7e7e7;
+  height: 200px;
 }
 
+.navbar-default {
+  text-align: center;
+  position: relative;
+}
+
+.navbar {
+  border: 0;
+  border-radius: 0;
+}
 .navbar .container {
   position: relative;
   text-align: center;
@@ -63,58 +58,92 @@ body .home .navbar h3:first-child, html .home .navbar h3:first-child {
   height: 3px;
   border-radius: 0;
 }
+.navbar .address {
+  margin-top: 10px;
+  float: left;
+  display: block;
+  width: 180px;
+  text-align: left;
+}
+.navbar .address h3 {
+  margin: 5px 0 0 0;
+  font-family: "Rokkitt", serif;
+  color: #ab451c;
+}
 .navbar a.navbar-brand {
-  width: 700px;
-  height: 140px;
-  margin: 15px auto !important;
+  width: 450px;
+  height: 150px;
+  margin: 15px auto 0 !important;
   padding: 0;
   display: block;
   float: none;
   color: #272526;
-  font-weight: 500;
-  background: url("../images/cc_hdr_logo.png") center center no-repeat;
+  background: url("../images/cc_hdr_logo_main_2.png") center center no-repeat;
   background-size: cover;
 }
 .navbar a.navbar-brand:hover {
   background-color: transparent;
 }
-.navbar h3 {
-  display: inline-block;
-  margin-top: 0;
+.navbar .phone {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: block;
+  height: 200px;
+  width: 200px;
+  text-align: right;
 }
-.navbar h3:first-child {
-  padding-right: 20px;
+.navbar .phone h3 {
+  margin: 5px 0 0 0;
+  font-family: "Rokkitt", serif;
+  color: #ab451c;
+}
+.navbar a:hover {
+  text-decoration: none;
+}
+.navbar .container-fluid-nav {
+  float: left;
+  display: block;
+  height: 30px;
+  margin-top: 10px;
+  width: 100%;
+  background: #272526;
 }
 .navbar .navbar-nav {
-  width: 488px;
   margin: 0 auto;
   float: none !important;
 }
 .navbar .navbar-nav li a {
-  color: #272526;
+  color: #d75723;
   -webkit-font-smoothing: antialiased;
-  padding: 20px 30px;
-  font-size: 16px;
-  font-weight: 300;
+  padding: 7px 30px;
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  font-size: 1.4em;
 }
 .navbar .navbar-nav li a:hover {
-  color: #272526;
-  background: rgba(0, 0, 0, 0.1);
+  color: #e2764b;
+  background: transparent;
 }
 .navbar .navbar-nav li a:focus {
-  color: #272526;
-  background: rgba(0, 0, 0, 0.1);
+  color: #d75723;
+  background-color: transparent;
   outline: 0;
 }
-.navbar .navbar-nav li.active a {
-  color: #272526;
+.navbar .navbar-nav li:active a {
+  color: #e2764b;
+  background-color: transparent !important;
 }
-.navbar .navbar-nav li.active a:hover {
-  color: #272526;
-  background: rgba(0, 0, 0, 0.2);
+.navbar .navbar-nav li:active a:hover {
+  color: #e2764b;
+  background: transparent;
 }
-.navbar .navbar-nav li.active a:focus {
-  color: #272526;
+.navbar .navbar-nav li:active a:focus {
+  color: lightnen(#ab451c, 10%);
+}
+
+.navbar-default .navbar-nav li a:active {
+  background-color: transparent;
 }
 
 .content {
@@ -137,6 +166,10 @@ body .home .navbar h3:first-child, html .home .navbar h3:first-child {
 .tag h1 {
   color: black;
   font-weight: 700;
+}
+
+.page-title {
+  font-family: "Rokkitt", serif;
 }
 
 .center-block {
@@ -240,9 +273,40 @@ body .home .navbar h3:first-child, html .home .navbar h3:first-child {
     width: 90% !important;
     background-size: contain !important;
   }
+
+  .navbar-nav li {
+    position: static;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar-nav li {
+    position: absolute;
+  }
+  .navbar-nav li:nth-child(1) {
+    left: 0;
+    top: 0;
+  }
+  .navbar-nav li:nth-child(1) a {
+    padding-left: 15px;
+  }
+  .navbar-nav li:nth-child(2) {
+    left: 120px;
+    top: 0;
+  }
+  .navbar-nav li:nth-child(3) {
+    right: 180px;
+    top: 0;
+  }
+  .navbar-nav li:nth-child(4) {
+    right: 0;
+    top: 0;
+  }
+  .navbar-nav li:nth-child(4) a {
+    padding-right: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1024px;
+    width: 1080px;
   }
 }

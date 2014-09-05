@@ -202,13 +202,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/cc_hdr_logo_main.png": {
+	"\/library\/images\/CC_hdr_logo_main.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 59360,
-		"inputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main.png",
-		"outputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main.png",
+		"inputAbbreviatedPath": "\/library\/images\/CC_hdr_logo_main.png",
+		"outputAbbreviatedPath": "\/library\/images\/CC_hdr_logo_main.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/CC_hdr_logo_main_2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 131229,
+		"inputAbbreviatedPath": "\/library\/images\/CC_hdr_logo_main_2.png",
+		"outputAbbreviatedPath": "\/library\/images\/CC_hdr_logo_main_2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/header_bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 115804,
+		"inputAbbreviatedPath": "\/library\/images\/header_bg.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/header_bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

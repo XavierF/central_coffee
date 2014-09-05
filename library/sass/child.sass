@@ -1,7 +1,13 @@
 //BRAND COLORS
+$paleWhite: #E7E7E7
 $lightGrey: #B3A9AF
 $darkGrey: #272526
 $white: #FFFFFF
+$orange: #EA7E38
+$redOrange: #AB451C
+$darkRed: #781A03
+
+@import url('http://fonts.googleapis.com/css?family=Rokkitt:400,700|Oswald:400,700,300')
 
 body, html
 	height: 100% !important
@@ -12,24 +18,10 @@ body, html
 		&:hover
 			color: $darkGrey
 	.home
-		a.navbar-brand
-			width: 700px
-			height: 270px
-			margin: 15px auto 0 !important
-			padding: 0
-			display: block
-			float: none
-			color: $darkGrey
-			&:hover
-				background-color: transparent
-			background: url('../images/cc_hdr_logo_main.png') center  center no-repeat
-			background-size: cover
-		.navbar
-			h3
-				display: block
-				margin-top: 0
-				&:first-child
-					padding-right: 0
+		.page-title
+			color: $darkRed
+			text-align: center
+			font-size: 4.5em
 
 
 .wrapper
@@ -39,10 +31,17 @@ body, html
 	margin: 0 auto -106px
 
 // HEADER
+.header
+	//background: url('../images/header_bg.jpg') center  center no-repeat rgba(0, 0, 0, .1)
+	background: $paleWhite
+	height: 200px
+	
 .navbar-default
 	text-align: center
-
+	position: relative
 .navbar
+	border: 0
+	border-radius: 0
 	.container
 		position: relative
 		text-align: center
@@ -59,52 +58,84 @@ body, html
 		.icon-bar
 			height: 3px
 			border-radius: 0
+	.address
+		margin-top: 10px
+		float: left
+		display: block
+		width: 180px
+		text-align: left
+		h3
+			margin: 5px 0 0 0
+			font-family: 'Rokkitt', serif
+			color: $redOrange
 	a.navbar-brand
-		width: 700px
-		height: 140px
-		margin: 15px auto !important
+		width: 450px
+		height: 150px
+		margin: 15px auto 0 !important
 		padding: 0
 		display: block
 		float: none
 		color: $darkGrey
-		font-weight: 500
 		&:hover
 			background-color: transparent
-		background: url('../images/cc_hdr_logo.png') center  center no-repeat
+		background: url('../images/cc_hdr_logo_main_2.png') center  center no-repeat
 		background-size: cover
-
-	h3
-		display: inline-block
-		margin-top: 0
-		&:first-child
-			padding-right: 20px
+	.phone
+		position: absolute
+		top: 10px
+		right: 0
+		display: block
+		height: 200px
+		width: 200px
+		text-align: right
+		h3
+			margin: 5px 0 0 0
+			font-family: 'Rokkitt', serif
+			color: $redOrange
+	a
+		&:hover
+			text-decoration: none
 	
+	.container-fluid-nav
+		float: left
+		display: block
+		height: 30px
+		margin-top: 10px
+		width: 100%
+		background: $darkGrey
 	.navbar-nav
-		width: 488px
 		margin: 0 auto
 		float: none !important
 		li
 			a
-				color: $darkGrey
+				color: lighten($redOrange, 10%)
 				-webkit-font-smoothing: antialiased
-				padding: 20px 30px
-				font-size: 16px
-				font-weight: 300
+				padding: 7px 30px
+				font-family: 'Rokkitt', serif
+				font-weight: 400
+				font-size: 1.4em
 				&:hover
-					color: $darkGrey
-					background: rgba(0, 0, 0, .1)
+					color: lighten($redOrange, 20%)
+					background: transparent
 				&:focus
-					color: $darkGrey
-					background: rgba(0, 0, 0, .1)
+					color: lighten($redOrange, 10%)
+					background-color: transparent 
 					outline: 0
-			&.active
+			&:active
 				a
-					color: $darkGrey
+					color: lighten($redOrange, 20%)
+					background-color: transparent !important
 					&:hover
-						color: $darkGrey
-						background: rgba(0, 0, 0, .2)
+						color: lighten($redOrange, 20%)
+						background: transparent
 					&:focus
-						color: $darkGrey
+						color: lightnen($redOrange, 10%)
+.navbar-default
+	.navbar-nav
+		li
+			a
+				&:active
+					background-color: transparent
 //			&:last-child
 //				a
 //					padding: 20px 0 20px 15px
@@ -127,13 +158,11 @@ body, html
 	h1
 		color: black
 		font-weight: 700
-	
-
-
-.slides
-	.items
 
 //PAGE CONTENT
+.page-title
+	font-family: 'Rokkitt', serif
+
 .center-block 
 	display: block
 	margin-left: auto
@@ -145,7 +174,7 @@ body, html
 	margin-top: 0
 	display: block
 
-#inner-content
+//#inner-content
 
 
 .article-header
@@ -154,9 +183,6 @@ body, html
 
 .entry-content
 	-webkit-font-smoothing: antialiased
-
-
-#main-content
 
 // FORM
 
@@ -240,11 +266,31 @@ body, html
 	a.navbar-brand
 		width: 90% !important	
 		background-size: contain !important
-				
 
-
-
-
+	.navbar-nav
+		li
+			position: static
+	
+@media screen and (min-width:768px)
+	.navbar-nav
+		li
+			position: absolute
+			&:nth-child(1)
+				left: 0
+				top: 0
+				a
+					padding-left: 15px
+			&:nth-child(2)
+				left: 120px
+				top: 0
+			&:nth-child(3)
+				right: 180px
+				top: 0
+			&:nth-child(4)
+				right: 0
+				top: 0
+				a
+					padding-right: 0
 	
 @media screen and (min-width: 768px) and (max-width:991px) 
 
@@ -263,4 +309,4 @@ body, html
 
 @media screen and (min-width: 1200px)
 	.container
-		width: 1024px
+		width: 1080px

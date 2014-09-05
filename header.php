@@ -37,22 +37,25 @@
 					<nav role="navigation">
 						<div class="navbar navbar-default">
 							<div class="container">
-								
-							<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
-							<a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank"><h3>1696 Hayes Street, San Francisco, CA 94117</h3></a><a href="tel:+4159222008" class="phone"><h3>(415) 922 - 2008</h3></a>
-							<!--<a href="https://www.google.com/maps/place/1696+Hayes+St,+San+Francisco,+CA+94117/@37.7751568,-122.4443275,18z/data=!4m2!3m1!1s0x808580b28170d723:0xc411367e70f31ed0" target="_blank"><h3>1696 Hayes Street, San Francisco, CA 94117</h3></a> <a href="tel:+4159222008" class="phone"><h3>(415) 922 - 2008</h3></a> -->
-								<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-							
-								<div class="navbar-collapse collapse navbar-responsive-collapse">
-									<?php bones_main_nav(); ?>
-								</div><!-- end .navbar-collapse -->
-							
+								<a class="address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank"><h3>1696 Hayes Street</h3><h3>(@Central Ave),</h3><h3>San Francisco,</h3><h3>CA 94117</h3></a>
+								<a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
+								<div class="phone"><h3>Open Daily</h3><h3>6:00 AM to 7:00 PM</h3><a href="tel:+4159222008"><h3>(415) 922 - 2008</h3></a></div>
+								<!--<a href="https://www.google.com/maps/place/1696+Hayes+St,+San+Francisco,+CA+94117/@37.7751568,-122.4443275,18z/data=!4m2!3m1!1s0x808580b28170d723:0xc411367e70f31ed0" target="_blank"><h3>1696 Hayes Street, San Francisco, CA 94117</h3></a> <a href="tel:+4159222008" class="phone"><h3>(415) 922 - 2008</h3></a> -->
+									<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
 							</div><!-- end .container -->
+							<div class="container-fluid-nav">
+								<div class="container">
+									<div class="navbar-collapse collapse navbar-responsive-collapse">
+										<?php bones_main_nav(); ?>
+									</div><!-- end .navbar-collapse -->
+								</div><!-- end .container -->
+							</div><!-- end .container-fluid-nav -->
+							
 						</div> <!-- end .navbar navbar-default navbar-fixed-top -->
 					</nav>
 				</header> <!-- end header -->
