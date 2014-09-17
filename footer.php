@@ -10,11 +10,14 @@
 
 				<div id="inner-footer" class="wrap clearfix">
 				
-					<nav role="navigation">
+					<div class="source-org copyright">
+						<a class="ftr-address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 Hayes Street(@Central Ave), San Francisco,CA 94117</a>
+						<a class="ftr-phone" href="tel:+4159222008">(415) 922 - 2008</a>
+						<a class="map" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco">MAP</a>
 							<?php bones_footer_links(); ?>
-					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
+						&copy; <?php echo date('Y'); ?> All content is copyright of <?php bloginfo( 'name' ); ?></div>
+					
+					
 
 				</div> <!-- end #inner-footer -->
 
@@ -25,6 +28,7 @@
 		
 
 		<!-- all js scripts are loaded in library/bones.php -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 		<?php wp_footer(); ?>
 		<!-- CUSTOM JS  -->
 	<script type="text/javascript">
@@ -35,15 +39,36 @@
             $('.navbar-collapse').collapse('toggle');
           });
 			$('.slides').slick({
-				autoplay: true,
-				autoplaySpeed: 8000,
-				fade: true,
-				speed: 1000,
-				dots: true,
-				infinite: false,
-				slidesToShow: 1,
-  		slidesToScroll: 1,
-  		swipe: true	
+				autoplay: false,
+				infinite: true,
+  			slidesToShow: 5,
+  			slidesToScroll: 1,
+  			dots: true,
+  			responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
 				});
 			});
 

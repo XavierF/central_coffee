@@ -191,6 +191,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/library\/images\/cappuccino.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.61086e+06,
+		"inputAbbreviatedPath": "\/library\/images\/cappuccino.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/cappuccino.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/cc_hdr_logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -202,24 +213,46 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/CC_hdr_logo_main.png": {
+	"\/library\/images\/cc_hdr_logo_main.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 59360,
-		"inputAbbreviatedPath": "\/library\/images\/CC_hdr_logo_main.png",
-		"outputAbbreviatedPath": "\/library\/images\/CC_hdr_logo_main.png",
+		"inputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main.png",
+		"outputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/CC_hdr_logo_main_2.png": {
+	"\/library\/images\/cc_hdr_logo_main_3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 133609,
+		"inputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main_3.png",
+		"outputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main_3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/cc_hdr_logo_main_x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 131229,
-		"inputAbbreviatedPath": "\/library\/images\/CC_hdr_logo_main_2.png",
-		"outputAbbreviatedPath": "\/library\/images\/CC_hdr_logo_main_2.png",
+		"inputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main_x.png",
+		"outputAbbreviatedPath": "\/library\/images\/cc_hdr_logo_main_x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/espresso.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24339,
+		"inputAbbreviatedPath": "\/library\/images\/espresso.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/espresso.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -231,6 +264,83 @@
 		"initialSize": 115804,
 		"inputAbbreviatedPath": "\/library\/images\/header_bg.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/header_bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/home_background_1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9.58834e+06,
+		"inputAbbreviatedPath": "\/library\/images\/home_background_1.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/home_background_1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/lasagna.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42769,
+		"inputAbbreviatedPath": "\/library\/images\/lasagna.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/lasagna.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/pastries-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23386,
+		"inputAbbreviatedPath": "\/library\/images\/pastries-2.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/pastries-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/pastries.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21736,
+		"inputAbbreviatedPath": "\/library\/images\/pastries.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/pastries.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/salad.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.91872e+06,
+		"inputAbbreviatedPath": "\/library\/images\/salad.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/salad.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/sandwich.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126506,
+		"inputAbbreviatedPath": "\/library\/images\/sandwich.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/sandwich.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/soup.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 269353,
+		"inputAbbreviatedPath": "\/library\/images\/soup.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/soup.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

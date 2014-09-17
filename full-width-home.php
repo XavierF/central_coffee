@@ -8,62 +8,90 @@
 ?>
 <?php get_header(); ?>
 
-		<div class="container">
+	<div class="full-width hero clearfix" role="hero-unit">
 
-			<div id="content">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<div class="container">
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'main .col-md-6 .col-md-offset-3 clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-				<div id="inner-content" class="wrap clearfix">
+					<header class="article-header">
+						<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+					</header> <!-- end article header -->
 
-						<div id="full-width" class="clearfix" role="main">
+					<section class="entry-content clearfix" itemprop="articleBody">
+						<?php the_content(); ?>
+					</section> <!-- end article section -->
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<footer class="article-footer">
+						<?php the_tags( '<span class="tags">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ' ', '' ); ?>
+					</footer> <!-- end article footer -->
 
-					
+				</article> <!-- end article -->
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<?php endwhile; else : ?>
 
-								<header class="article-header">
+				<article id="post-not-found" class="hentry clearfix">
+					<header class="article-header">
+						<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+					</header>
+					<section class="entry-content">
+						<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+					</section>
+					<footer class="article-footer">
+							<p><?php _e( 'This is the error message in the page.php template.', 'bonestheme' ); ?></p>
+					</footer>
+				</article>
 
-									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+			<?php endif; ?>
+		</div><!-- .container -->
+	</div> <!-- end #full-width -->
+	<section class="container ">
+		<div class="row">
+			<div class="col-md-6">
+				<?php the_field('left_column');?>
+	 		</div><!-- .col-md-6 -->
 
+			<div class="col-md-6">
+				<?php the_field('right_column');?>
+	 		</div><!-- .col-md-6 -->
 
-								</header> <!-- end article header -->
+		</div><!-- .row -->
+	</section>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-							</section> <!-- end article section -->
+	<div class="slides">
 
-								<footer class="article-footer">
-									<?php the_tags( '<span class="tags">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ' ', '' ); ?>
+		<div class="item">
+			<img src="<?php the_field('slide_1');?>" class="img-responsive">
+	  </div><!-- end .item -->
 
-								</footer> <!-- end article footer -->
+		<div class="item">
+			<img src="<?php the_field('slide_2');?>" class="img-responsive">
+		</div><!-- end .item -->
 
+		<div class="item">
+			<img src="<?php the_field('slide_3');?>" class="img-responsive">
+	  </div><!-- end .item -->
 
-							</article> <!-- end article -->
+		<div class="item">
+			<img src="<?php the_field('slide_4');?>" class="img-responsive">
+		</div><!-- end .item -->
 
-							<?php endwhile; else : ?>
+		<div class="item">
+			<img src="<?php the_field('slide_5');?>" class="img-responsive">
+		</div><!-- end .item -->
 
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the page.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
+		<div class="item">
+			<img src="<?php the_field('slide_6');?>" class="img-responsive">
+		</div><!-- end .item -->
 
-							<?php endif; ?>
+		<div class="item">
+			<img src="<?php the_field('slide_7');?>" class="img-responsive">
+		</div><!-- end .item -->
 
-						</div> <!-- end #main -->
+		<div class="item">
+			<img src="<?php the_field('slide_8');?>" class="img-responsive">
+		</div><!-- end .item -->
 
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
-
-			</div> <!-- end .container -->
-
+	</div><!-- end .slides--> 
 
 <?php get_footer(); ?>
