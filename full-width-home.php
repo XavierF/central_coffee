@@ -52,7 +52,7 @@
 	 		</div><!-- .col-md-6 -->
 
 			<div class="col-md-6">
-				<?php the_field('right_column');?>
+				<img src="<?php the_field('right_column');?>" class="img-responsive">
 	 		</div><!-- .col-md-6 -->
 
 		</div><!-- .row -->
