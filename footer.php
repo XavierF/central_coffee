@@ -4,15 +4,14 @@
 			<!-- <div class="visible-xs">
 				<a data-spy="affix" data-offset-bottom="500" class="affix-bottom btn btn-block" href="#top">back to the top</a>
 			</div> -->
-			<footer class="footer" role="contentinfo">
-
-
+			<footer class="footer" role="content-info">
 				<div id="inner-footer" class="wrap clearfix">
 				
 					<div class="source-org">
-						<a class="ftr-address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 Hayes Street(@Central Ave), San Francisco,CA 94117</a>
+						<a class="ftr-address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 HAYES ST, SAN FRANCISCO, CA 94117</a>
 						<a class="ftr-phone" href="tel:+4159222008">(415) 922 - 2008</a>
 						<a class="map" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco">MAP</a>
+						<p>Open Daily 6:00 AM to 7:00 PM</p>
 					</div>
 							<?php bones_footer_links(); ?>
 					<div class="source-org">&copy; <?php echo date('Y'); ?> All content is copyright of <?php bloginfo( 'name' ); ?></div>
@@ -22,24 +21,37 @@
 
 			</footer> <!-- end footer -->
 		<!-- all js scripts are loaded in library/bones.php -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		
 		<?php wp_footer(); ?>
 		<!-- CUSTOM JS  -->
 	<script type="text/javascript">
 		jQuery(document).ready(function($){
+			//$('.modal').modal('show');
+			//setTimeout(function(){
+  			//$('.modal').modal('hide')
+				//	}, 4000);
 
      $('.navbar-toggle').bind( "touchstart", function(e){
           e.preventDefault();
             $('.navbar-collapse').collapse('toggle');
+
+
           });
+		
+		
 			$('.full-width').slick({
 				autoplay: false,
+				infinite: true,
   			dots: true,
-  			int: 4000
+  			speed: 1500,
+  			swipe: true,
+  			int: 5000
 				});
 			$('.slides').slick({
 				autoplay: false,
 				infinite: true,
+				speed: 1500,
+				swipe: true,
   			slidesToShow: 5,
   			slidesToScroll: 1,
   			dots: true,

@@ -2,7 +2,7 @@
 
 <div class="container">
 
-			<div id="content">
+	<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
 
@@ -14,20 +14,10 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="article-header">
-
-									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-									
-
-
-								</header> <!-- end article header -->
 
 								<section class="entry-content clearfix" itemprop="articleBody">
 									<?php the_content(); ?>
-							</section> <!-- end article section -->
-
-
-							
+								</section> <!-- end article section -->
 
 							</article> <!-- end article -->
 
@@ -51,8 +41,8 @@
 
 				</div> <!-- end #inner-content -->
 
-			</div> <!-- end #content -->
+	</div> <!-- end #content -->
 
-				</div> <!-- end .container -->
+</div> <!-- end .container -->
 
 <?php get_footer(); ?>

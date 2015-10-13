@@ -1,32 +1,30 @@
-//BRAND COLORS
+//BRAND COLORS CENTRAL COFFEE
 $paleWhite: #E7E7E7
 $lightGrey: #B3A9AF
 $darkGrey: #272526
 $white: #FFFFFF
-$orange: #EA7E38
 $gold: #E69739
 $cream: #eae3d0
-$redOrange: #AB451C
+$orange: #EA7E38
+$redOrange: #E05D24
 $darkRed: #781A03
-$brown: #3F2B1C
+$brown: #35271F
 
-@import url('http://fonts.googleapis.com/css?family=Rokkitt:400,700|Raleway:400,700,300')
+@import url('http://fonts.googleapis.com/css?family=Rokkitt:400,700|Raleway:400,500,700,300')
+@import url('../css/style.css')
 
 body, html
 	height: 100% !important
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
 	font-family: 'Raleway', sans-serif
-	font-weight: 600
+	font-weight: medium !important
 	background: $cream !important
 	a
 		color: white
 		&:hover
 			color: white
 	.home
-		.hero
-			height: 450px
-			padding: 0
 		.main
 			background: rgba(0,0,0,0.78039)
 			width: 400px
@@ -36,106 +34,124 @@ body, html
 			.copy
 				color: $paleWhite
 				font-weight: 600
-				font-family: 'Raleway', sans serif
+				font-family: 'Rokkitt', serif
 		.col-md-6
-			padding: 20px 20px  20px 15px
+			.sub-head
+				color: $redOrange
+				font-family: 'Rokkitt', serif
+				font-size: 2.45em
+				font-weight: 600
+				margin-top: 10px
+				margin-bottom: 10px
+
 		.page-title
 			color: $orange
 			text-align: left
 			font-size: 2.3em
 			margin-top: 0
-		.sub-head
-			color: $orange
-
+		.column-1
+			p
+				font-family: 'Rokkitt', serif
+				font-size: 1.35em
+				font-weight: medium !important
+				line-height: 1.3em
+.panels
+	.sub-head
+		color: $redOrange
+		font-family: 'Rokkitt', serif
+		margin-bottom: 22px
+		font-size: 2.45em
+		font-weight: 600
 .wrapper
 	min-height: 100%
 	height: auto !important
 	height: 100% !important
-	margin: 0 auto -106px
 
 // HEADER
 .header
 	background: $cream
-	height: 215px
+	height: 230px
+.masthead
+	width: 1080px
+	margin: 0 auto
+	padding: 0 15px
 	
+.navbar-brand
+	height: 180px
+	margin: 10px 0 !important
+	background-color: transparent
+	display: inline-block !important
+	float: left
+	width: 50%
+	&:hover
+		background-color: transparent
+	background: url('../images/CC-logo-2015.png') center  center no-repeat
+	background-size: 85%
+.address
+	height: 150px
+	padding: 110px 0 10px 15px
+	text-align: left
+	display: inline-block !important
+	float: left
+	width: 25%
+	h3
+		font-size: 1.7em
+		font-weight: 500
+		line-height: 1em
+		margin: 0
+		font-family: 'Rokkitt', serif
+		color: $brown
+.phone
+	height: 150px
+	padding: 110px 15px 10px 0
+	text-align: right
+	display: inline-block !important
+	float: left
+	width: 25%
+	h3
+		font-size: 1.7em
+		font-weight: 500
+		line-height: 1em
+		margin: 0
+		font-family: 'Rokkitt', serif
+		color: $brown
+	a
+		color: $brown
+		&:hover
+			text-decoration: none
 .navbar-default
 	text-align: center
 	position: relative
 .navbar
 	border: 0
 	border-radius: 0
+	background: $brown
+	min-height: 30px !important
+
 	.container
 		position: relative
 		text-align: center
 	.navbar-toggle
 		border: none
 		float: none
-		margin: 0 auto 5px auto
-		border-radius: 2px
+		width: 100%
+		margin: 0 
+		border-radius: 0
+		background: $brown
 		&:hover, &:active
-			background: transparent
+			background: $brown
 			outline: none
 		&:focus
 			outline: none
 			background: transparent
 		.icon-bar
-			height: 3px
+			margin: 3px auto
+			height: 2px
 			border-radius: 0
-			background-color: $brown
-	.address
-		margin-top: 85px
-		float: left
-		display: block
-		width: 250px
-		text-align: left
-		h3
-			font-size: 1.7em
-			font-weight: 500
-			line-height: 1em
-			margin: 0
-			font-family: 'Rokkitt', serif
-			color: $brown
-	.mobile-address, .mobile-phone
-		font-family: 'Rokkitt', serif
-		color: $brown
-	.mobile-address
-		h3
-			margin-top: 0
-	a.navbar-brand
-		display: block
-		float: none
-		&:hover
-			background-color: transparent
-		background: url('../images/cc_hdr_logo_main_3.png') center  center no-repeat
-		background-size: cover
-	.phone
-		position: absolute
-		top: 84px
-		right: 0
-		display: block
-		height: 200px
-		width: 200px
-		text-align: right
-		h3
-			font-size: 1.7em
-			font-weight: 500
-			line-height: 1em
-			margin: 0
-			font-family: 'Rokkitt', serif
-			color: $brown
-	a
-		&:hover
-			text-decoration: none
-	.container-fluid-nav
-		float: left
-		display: block
-		height: 30px
-		margin-top: 20px
-		width: 100%
-		background: $brown
+			background-color: white
+
 	.navbar-nav
 		margin: 0 auto
-		float: none !important
 		li
 			padding: 5px
 			a
@@ -154,20 +170,17 @@ body, html
 					background-color: transparent 
 					outline: 0
 			&:active
-				color: white !important
-				background-color: transparent !important
-				&:hover
-					color: white
-					background: transparent
-				&:focus
-					color: white 
-.navbar-default
-	.navbar-nav
-		li
-			a
-				&:active
-					background-color: transparent
-					color: white
+				a
+					color: $redOrange !important
+					background-color: transparent !important
+					&:hover
+						a
+						color: $redOrange
+						background: transparent
+					&:focus
+						a
+						color: $redOrange
+
 //			&:last-child
 //				a
 //					padding: 20px 0 20px 15px
@@ -183,9 +196,12 @@ body, html
 .hero
 	position: relative
 	margin-top: 0
+	padding: 0 !important
+	width: 100% !important
 	.slick-dots 
 		position: absolute
-		bottom: -12%
+		bottom: -8%
+		margin-bottom: 0
 .tag
 	position: absolute
 	top: 39.5%
@@ -197,24 +213,25 @@ body, html
 		color: black
 		font-weight: 700
 // Slider
-.full-width .slick-slider
-	margin: 0 0 40px 0
+.full-width 
+	.slick-slider
+		margin: 0 0 30px 0
+		height: 100% !important
 
 .sliders
-	background-size: cover !important
-	height: 450px !important
+	background-size: 100% !important
+	background-repeat: no-repeat !important
+	height: 100% !important
 .panels
-	height: 300px
 	color: white
-	background: rgba(0,0,0,0.78039)
-	margin: 20px 0 0 60px
+	background: rgba(0,0,0,0.5)
 	padding: 20px
 
 .slick-slider 
 	position: relative 
 	display: block 
 	width: 100%
-	background: darken(darkRed, 10%)
+	background: transparent
 	margin: 0 0 40px 0
 	padding: 20px 2% 20px 3%
 	box-sizing: border-box 
@@ -257,8 +274,8 @@ body, html
 	top: 0
 	display: block
 	zoom: 1
-	width: 100%
-
+	width: 100% 
+	height: 100% !important
 .slick-track
 	&:before
 		content: ""
@@ -299,16 +316,12 @@ body, html
 	height: auto
 	border: 1px solid transparent
 //Icons 
-@font-face 
+@font-face
 	font-family: 'slick'
-	src: local('slick')
-	src: url('../css/fonts/slick.eot')
-	src: url('../css/fonts/slick.eot?#iefix') format('embedded-opentype')
-	scr: url('../css/fonts/slick.woff') format('woff')
-	src: url('../css/fonts/slick.ttf') format('truetype')
-	src: url('../css/fonts/slick.svg#slick') format('svg')
 	font-weight: normal
 	font-style: normal
+	src: url('../../library/fonts/slick.eot')
+	src: url('../../library/fonts/slick.eot?#iefix') format("embedded-opentype"), url('../../library/fonts/slick.woff') format("woff"), url('../../library/fonts/slick.ttf') format("truetype"), url('../../library/fonts/slick.svg#slick') format("svg")
 
 // Arrows 
 .slick-prev, .slick-next
@@ -345,22 +358,35 @@ body, html
 		-webkit-font-smoothing: antialiased
 		-moz-osx-font-smoothing: grayscale
 
-.slick-prev 
-	left: 10px
 .slick-prev
-	&:before 
-		content: "\2190"
+	left: 30px
+
+[dir='rtl'] .slick-prev
+	right: -10px
+	left: auto
+
+.slick-prev:before
+	content: '←'
+
+[dir='rtl'] .slick-prev:before
+	content: '→'
+	color: white
 
 .slick-next
-	right: -3px
-.slick-next
-	&:before
-		content: "\2192"
+	right: 30px
 
+[dir='rtl'] .slick-next
+	right: auto
+	left: -25px
+
+.slick-next:before
+	content: '→'
+
+[dir='rtl'] .slick-next:before
+	content: '←'
 //Dots 
 .slick-dots 
 	position: absolute
-	bottom: -22%
 	list-style: none
 	display: block
 	text-align: center
@@ -389,7 +415,7 @@ body, html
 			outline: none
 			line-height: 0
 			font-size: 0
-			background-color:  darken(darkRed, 10%)
+			background-color: $brown
 			padding: 5px
 			cursor: pointer
 
@@ -401,7 +427,7 @@ body, html
 .slick-dots 
 	li 
 		button
-			color: darken(darkRed, 10%)
+			color: $brown
 			&:before
 				position: absolute
 				top: 0
@@ -424,7 +450,8 @@ body, html
 	.item
 		height: auto
 
-//PAGE CONTENT
+
+//----------------------------PAGE CONTENT
 .page-title
 	font-family: 'Rokkitt', serif
 
@@ -436,20 +463,103 @@ body, html
 
 #content
 	-webkit-font-smoothing: antialiased
-	margin-top: 0
+	margin-top: 20px
 	display: block
-
+	p
+		font-family: 'Rokkitt', serif
+		color: $brown
+		font-size: 1.35em !important
+		line-height: 1.5em !important
+	.sub-head
+		color: $redOrange
+		font-family: 'Rokkitt', serif
 //#inner-content
-
-
 .article-header
 	margin: 10px 0
-
 
 .entry-content
 	-webkit-font-smoothing: antialiased
 
+.archive-title
+	color: lighten($brown, 5%)
+	margin-top: 0
+.post
+	padding: 10px 0
+	margin-right: 30px
+	border-bottom: 1px solid darken($gold, 10%)
+	a
+		color: $brown
+		text-decoration: underline
+.posts-title
+	font-size: 1.5em
+	a
+		color: lighten($brown, 5%) !important
+		text-decoration: none
+//-------------------------------------------- MENU
+.menu
+	.col-md-6
+		&:nth-child(1)
+			.panel
+				margin-bottom: 0
+				h2
+					font-size: 2.5em
+					vertical-align: bottom
+.panel
+	background: $cream
+	box-shadow: none
+	padding-right: 20px
+	p
+		font-family: 'Rokkitt', serif
+		
+.sub-head
+	font-family: 'Rokkitt', serif
+	font-size: 1.9em
+	margin-bottom: 2px
+
+//-------------------------------------------- SIDEBAR
+.sidebar
+	background: lighten($brown, 5%)
+	padding-top: 10px
+.widgettitle
+	color: $gold
+	text-align: center
+.widget
+	li
+		list-style-type: none
+	a
+		font-size: 1.2em
+		padding: 10px 0
+.widget_calendar
+	text-align: center
+	#wp-calendar
+		width: 100%
+	#prev
+		padding-top: 10px
+		text-align: left
+	#next
+		padding-top: 10px
+		text-align: right
+	caption
+		margin: 0 auto
+		color: $gold
+	thead
+
+	th
+		color: $gold
+		text-align: center
+	td
+		color: $gold
+
 // FORM
+
+.frm_forms.frm_style_formidable-style.with_frm_style 
+	margin-left: 9%
+	margin-right: 20%
+
+.private
+	margin-left: 9%
+	font-size: 8px
+
 
 
 // FOOTER
@@ -465,6 +575,9 @@ body, html
 .source-org
 	margin-bottom: 0
 	color: white
+	font-family: 'Rokkitt', serif !important
+p
+	display: inline-block
 .footer-nav
 	display: inline-block
 	margin: 0
@@ -473,29 +586,49 @@ body, html
 		padding: 0 30px 0 30px
 		margin-right: 30px
 		border-right: 1px solid $gold
+		font-family: 'Rokkitt', serif !important
 
 
-// MEDIA QUERIES
+//--------------------------------------------- MEDIA QUERIES
 @media screen and (max-width:320px)
 	ul.info
 		margin-left: -20px
 		li
 			font-size: 1em
 
-@media screen and (min-width: 320px) and (max-width: 568px)
+@media screen and (max-width: 568px)
+	.header
+		height: auto !important
 	.navbar
 		margin-bottom: 0
+		height: auto !important
 		.container
 			padding-left: 10px
 			padding-right: 10px
-		a.navbar-brand
-			float: none
-			text-align: center !important
-			background-size: cover
-			margin: 0 auto !important
+
+	.masthead
+		width: 100% 
+		padding: 0 10px
+		display: block
+	.navbar-brand
+		width: 100% !important
+		background-size: contain !important
+		display: block !important
+	h4.mobile-address, h4.mobile-phone
+		width: 100%
+		text-align: center
+		color: $brown
+		display: block
+		font-family: 'Rokkitt', serif
+		a
+			color: $brown
+			font-size: 1.3em
+	h4.mobile-address
+		margin-bottom: 2px
+	h4.mobile-phone
+		margin-top: 0
 
 	.home
-		.container
 		.main
 			background: rgba(0,0,0,0.78039)
 			width: 100% !important
@@ -504,7 +637,7 @@ body, html
 			padding: 10px
 		.full-width
 			padding: 0 !important
-			height: 100% !important
+			margin-bottom: 10px
 			.container
 				padding: 0
 				height: 100% !important
@@ -514,65 +647,131 @@ body, html
 		.copy
 			font-size: 1em
 		.subhead
-		font-size: 1.5em
+			font-size: 1.5em
+	
 
 		h2.page-title
 			font-size: 1.5em
+	.slides
+		background-size: 100%
+		height: 100%
+
+	.panels
+		width: 100% !important
+		background: rgba(0, 0, 0, 0.2) !important
+		margin: 0 !important
+		padding: 10px 65px 0
+		.sub-head
+			margin-top: 0
+			margin-bottom: 20px
+			font-size: 1.5em
+			font-weight: 500
 
 	
+	.slick-dots
+		display: none !important
 
-	.slick-slider
-		margin: 0
-
+	.col-md-6
+		.sub-head
+			font-size: 2em !important
+			font-weight: 600
+			margin-top: 10px
+			margin-bottom: 10px
+	
 	.img-responsive
 		width: 94%
 
+	.page-id-4, .page-id-10
+		#main
+			width: 100%
+		.article-header
+			text-align: center
+		.entry-content
+			padding-left: 0
+			width: 100%
+		.page-title
+			margin-left: 0
+		p
+			margin-left: 0
+
+	.frm_forms.frm_style_formidable-style.with_frm_style 
+		margin-left: 0
+		margin-right: 0
+
+	.private
+		margin-left: 0
 	.footer
 		text-align: center
+		p
+			display: block
+	#inner-footer
+		width: 100% !important
 
 	.ftr-address, .ftr-phone
 		display: block
 		padding: 0
 		border-right: 0
-.ftr-phone
-	padding: 0
-a.map
-	padding: 0 
-	color: white
-.source-org
-	display: block
-	margin-bottom: 0
-	color: white
-.footer-nav
-	li
+	.ftr-phone
+		padding: 0
+	a.map
+		padding: 0 
+		color: white
+	.source-org
 		display: block
+		margin-bottom: 0
+		color: white
 		text-align: center
-		margin: 10px 0
-		a
-			padding: 0
-			margin-right: 0
-			border-right: 0
+	.footer-nav
+		li
 			display: block
-			float: none
-		
-
+			text-align: center
+			margin: 10px 0
+			a
+				padding: 0
+				margin-right: 0
+				border-right: 0
+				display: block
+				float: none
 	.source-org
 		margin-top: 10px
 
 @media screen and (min-width: 320px) and (max-width: 568px) and (orientation : portrait)
-	a.navbar-brand
+	.navbar-brand
 		width: 100%
-		height: 115px
+		height: 105px
+
+	.sliders
+		background-size: cover !important
+		min-height: 200px !important
+		width: auto
+
+	.panels
+		width: 100% !important
+		height: 100%
+		background: rgba(0, 0, 0, 0.2) !important
+		margin: 0 !important
+		padding: 15px 65px 
+		.sub-head
+			margin-top: 0
+			margin-bottom: 10px
+			font-size: 1.5em
+			font-weight: 500
 	
-
-	.mobile-address, .mobile-phone
-		h4
-			font-size: 1em
-			display: block
-
 	.img-responsive
 		width: 100%
+	.column-1
+		p
+			font-size: 1em !important
 
+
+	label.frm_primary_label
+		text-align: left !important
+	.frm_submit
+		width: 100% !important
+		margin-right: 0
+		input
+			width: 100% !important
+	
 	.footer
 		padding: 5px 0 10px 0
 
@@ -585,38 +784,106 @@ a.map
 		li
 			margin: 0
 			a
-				padding: 10px 0 
+				padding: 0 
 				margin: 0
 
-@media screen and (min-width: 320px) and (max-width: 568px) and (orientation : landscape)
-	a.navbar-brand
-		width: 100%
-		height: 211px
-		padding: 0
+@media screen and (max-width: 568px) and (orientation : landscape)
+	.header
+		height: auto !important
+	.hero
+		height: 60% !important
+		.panels
+			height: 100% !important
+			width: 100% !important
+			margin: 0 !important
+			padding: 20px 40px !important
+		.slick-dots
+			display: none
+	.sliders
+		background-size: cover !important
+		min-height: 200px !important
+		width: auto
+
 
 	.img-responsive
 		width: 94%
 
+	.page-id-4, .page-id-10
+		p
+			margin-left: 200px
+
+	#frm_field_8_container, #frm_field_10_container, #frm_field_12_container, #frm_field_13_container
+		width: 100% !important
+		input
+			float: right
+
+		label.frm_primary_label
+			width: 120px !important
+			text-align: right !important
+
+	.frm_submit
+		width: 100% !important
+		float: left
+		margin-right: 0
+		input
+			width: 76% !important
+			float: right
+	.frm_error
+		margin-left: 130px !important
 
 @media screen and (min-width: 569px) and (max-width:767px)
 
+	.hero
+		margin-bottom: 0 !important
+	.sliders
+		background-size: 100% auto !important
+		height: auto !important
 
+	.panels
+		height: 180px !important
+		width: 50% !important
+		margin: 3% 0 7% 80px !important
+		.sub-head
+			font-size: 1.5em
+			font-weight: 500
+			margin: 0 0 8px 0
+
+	.slick-dots
+		button
+			margin-top: 10px
+
+@media screen and (max-width: 516px)
+	.address, .phone
+		display: none !important
+
+@media screen and (min-width: 569px)
+	.visible-xs
+		display: none !important
 
 
 @media screen and (max-width:767px)
-
-	.home
-	.header
-		height: auto
-	a.navbar-brand
-		background-size: contain
-
 	.navbar
 		.container-fluid-nav
 			background: transparent
 			margin: 0
 			height: 0
-
+			.container
+				padding: 0
+	.navbar-default
+		.navbar-nav
+			li
+				background: $brown
+				border-bottom: 1px solid lighten($brown, 10%)
+				&:first-child
+					border-top: 1px solid lighten($brown, 10%)
+				a
+					color: white
+					&:active
+						background-color: $brown
+						color: white
+	.archive
+		.post
+			margin-right: 0
 	
 @media screen and (min-width:768px)
 	.navbar-nav
@@ -626,7 +893,7 @@ a.map
 				left: 0
 				top: 0
 				a
-					border-right: 1px solid $gold
+					border-right: 1px solid $redOrange
 					padding-left: 0 !important
 					padding-right: 40px
 			&:nth-child(2)
@@ -636,7 +903,7 @@ a.map
 				right: 180px
 				top: 0
 				a
-					border-right: 1px solid $gold
+					border-right: 1px solid $redOrange
 					padding-right: 70px
 			&:nth-child(4)
 				right: 0
@@ -669,23 +936,52 @@ a.map
 		padding: 0 30px
 		color: white
 	
-@media screen and (min-width: 768px) and (max-width:991px) 
-	a.navbar-brand
-		width: 90% !important	
-		background-size: contain !important
+@media screen and (min-width: 517px) and (max-width: 678px) 
 
-	.navbar
-		.phone
-			padding-right: 15px
+	.masthead
+		width: 100% !important
+		height: 180px
+		padding: 0 10px
+		display: block
+
+	.navbar-brand
+		width: 50% !important
+		background-size: contain !important
+		display: inline-block !important
+		float: left
+
+	.address 
+		max-width: 25% !important
+		padding-top: 50px
+		padding-left: 12px
+		display: inline-block !important
+		float: left
+		h3
+			font-size: 1.4em
+	.phone  
+		max-width: 25% !important
+		padding-top: 50px
+		padding-right: 12px
+		display: inline-block !important 
+		float: left
+		h3
+			font-size: 1.4em   
+	.hidden-xs
+		display: inline-block !important
+
+
+@media screen and (min-width: 768px) and (max-width:991px) 
+
 
 	.navbar-nav
 		li
 			&:nth-child(1)
 				margin-left: 15px
 			&:nth-child(4)
-				margin-right: 15px	
+				margin-right: 15px
 
-@media screen and (min-width: 768px) and (max-width: 1024px) 
+
+@media screen and (min-width: 698px) and (max-width: 1024px) 
 	.img-responsive
 		width: 94%
 	
@@ -694,22 +990,118 @@ a.map
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape)
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 746px) and (max-width: 901px)
+	.masthead
+		width: 100% !important
+		margin: 0 auto
+		height: 200px
+		padding: 0 15px
+		display: block
 	.navbar-brand
-		width: 450px
-		height: 150px
-		margin: 15px auto 0 auto !important
-		padding: 0
+		width: 50% !important
+		background-size: contain !important
+		display: inline-block !important
+		float: left
+	.address 
+		max-width: 27% !important
+		padding-top: 70px
+		padding-left: 15px
+		display: inline-block !important
+		float: left
+	.phone  
+		max-width: 27% !important
+		padding-top: 70px
+		padding-right: 15px
+		display: inline-block !important 
+		float: left   
+	.hidden-xs
+		display: inline-block !important
+
+@media screen and (min-width: 902px) and (max-width: 991px)
+
+	.masthead
+		width: 100% !important
+		padding: 0 15px
+	.navbar-brand
+		width: 44% !important
+		background-size: contain
+
+	.address .col-md-3 
+		width: 28% !important
+		display: inline-block !important
+
+	.phone .col-md-3
+		width: 28% !important
+		padding-right: 20px
+		display: inline-block !important    
+
+
+
 
 @media screen and (min-width: 1024px)
 	.img-responsive
 		width: 94%
 
-	
-	
-@media screen and (max-width: 1199px)
 
+	
+@media screen and (min-width: 768px) and (max-width: 1199px)	
+	.archive
+		#main, #container
+			width: 60%
+			float: left
+		.sidebar
+			width: 40%
+			float: right
+	.hero
+		margin-bottom: 0 !important
+	
+
+	.slick-dots
+		button
+			margin-top: 10px
+
+@media screen and (min-width: 768px) and (max-width: 1090px)	
+	.panels
+		height: 200px !important
+		width: 40% !important
+		margin: 3% 0 6% 80px !important
+		.sub-head
+			font-size: 2em
+			font-weight: 500
+			margin-top: 0
+
+@media screen and (min-width: 1091px) and (max-width: 1199px)
+
+	.panels
+		position: relative
+		height: 300px
+		margin:  5% 0 6% 80px !important
+		.sub-head
+			font-size: 1.5em
+			font-weight: 600
+			margin-top: 0
+	.slick-dots
+		bottom: -5%
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+	.masthead
+		width: 970px !important
+		margin: 0 auto !important
+		padding: 0 15px
 
 @media screen and (min-width: 1200px)
 	.container
 		width: 1080px
+
+	#main
+		width: 100%
+	
+	.panels
+		height: 300px
+		margin:  5% 0 7% 80px 
+		.sub-head
+			font-size: 2em
+			font-weight: 600
+
+	.slick-dots
+		bottom: -22%

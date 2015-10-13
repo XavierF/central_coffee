@@ -16,7 +16,6 @@ URL: http://bragthemes.com
 Lets get started!!!!
 */
 
-
 /**
  *  Display Bootstrap numbered pagination code.
  *

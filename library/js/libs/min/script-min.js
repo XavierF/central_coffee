@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#promo").splashScreen({textLayers:["/library/images/home_background_1.jpg"]})});
