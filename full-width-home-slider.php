@@ -37,7 +37,7 @@
 
 		</div><!-- .row -->
 	</section>
-	<section>
+	<section class="film-strip">
 		<?php if( have_rows('slides') ): ?>
 		<div class="slides">
 			<?php while( have_rows('slides') ): the_row(); 

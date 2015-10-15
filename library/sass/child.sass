@@ -264,7 +264,7 @@ body, html
 	font-weight: 500
 	&:nth-child(1)
 		margin-left: 350px
-		height: 200px
+		height: 300px
 	&:nth-child(2)
 		margin-left: 0
 
@@ -494,6 +494,9 @@ body, html
 	.item
 		height: auto
 
+.film-strip
+	background: $brown
+
 
 //----------------------------PAGE CONTENT
 .page-title
@@ -541,13 +544,7 @@ body, html
 		text-decoration: none
 //-------------------------------------------- MENU
 .menu
-	.col-md-6
-		&:nth-child(1)
-			.panel
-				margin-bottom: 0
-				h2
-					font-size: 2.5em
-					vertical-align: bottom
+
 .panel
 	background: $cream
 	box-shadow: none
@@ -923,10 +920,10 @@ p
 				&:first-child
 					border-top: 1px solid lighten($brown, 10%)
 				a
-					color: white
+					color: $cream
 					&:active
 						background-color: $brown
-						color: white
+						color: $redOrange
 	.archive
 		.post
 			margin-right: 0
