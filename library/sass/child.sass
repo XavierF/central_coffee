@@ -89,7 +89,7 @@ body, html
 	background-size: 85%
 .address
 	height: 150px
-	padding: 110px 0 10px 15px
+	padding: 110px 0 10px 5px
 	text-align: left
 	display: inline-block !important
 	float: left
@@ -103,7 +103,7 @@ body, html
 		color: $brown
 .phone
 	height: 150px
-	padding: 110px 15px 10px 0
+	padding: 110px 5px 10px 0
 	text-align: right
 	display: inline-block !important
 	float: left
@@ -119,6 +119,9 @@ body, html
 		color: $brown
 		&:hover
 			text-decoration: none
+
+// -------------------------------------     NAV
+
 .navbar-default
 	text-align: center
 	position: relative
@@ -148,14 +151,14 @@ body, html
 			margin: 3px auto
 			height: 2px
 			border-radius: 0
-			background-color: white
+			background-color: $cream
 
 	.navbar-nav
 		margin: 0 auto
 		li
 			padding: 5px
 			a
-				color: white
+				color: $cream
 				-webkit-font-smoothing: antialiased
 				padding-top: 2px
 				padding-bottom: 0
@@ -163,7 +166,7 @@ body, html
 				font-weight: 400
 				font-size: 1.4em
 				&:hover
-					color: white
+					color: darken($cream, 10%)
 					background: transparent
 				&:focus
 					color: white
@@ -192,7 +195,7 @@ body, html
 .entry-content
 	color: white
 
-// HERO
+//------------------------------------ HERO
 .hero
 	position: relative
 	margin-top: 0
@@ -212,20 +215,60 @@ body, html
 	h1
 		color: black
 		font-weight: 700
+
+//----------------------------------- HOME PAGE 2
+.page-id-213, .page-id-199
+	position: relative
+	.header
+		position: absolute
+		top: 440px
+		left: 0
+		z-index: 2000
+		width: 100%
+		background: transparent
+	.navbar-brand
+		margin-top: -300px !important
+	.navbar
+		position: absolute !important
+		top: 0
+		left: 0
+		width: 100%
+	.phone
+		float: right
+
+
+	.full-width
+		margin-bottom: 250px
+
+	.panels
+		background: rgba(0,0,0,0)
+		height: 275px !important
+
 // Slider
 .full-width 
 	.slick-slider
 		margin: 0 0 30px 0
 		height: 100% !important
-
+		
 .sliders
 	background-size: 100% !important
 	background-repeat: no-repeat !important
 	height: 100% !important
+
+
 .panels
-	color: white
-	background: rgba(0,0,0,0.5)
+	color: black
+	background: rgba(234, 227, 208, 0.2)
 	padding: 20px
+	font-family: 'Raleway', sans-serif
+	font-weight: 500
+	&:nth-child(1)
+		margin-left: 350px
+		height: 200px
+	&:nth-child(2)
+		margin-left: 0
+
+
 
 .slick-slider 
 	position: relative 
@@ -287,12 +330,13 @@ body, html
 	&:after 
 		clear: both
 
+
 .slick-loading .slick-track
 	visibility: hidden
 
 .slick-slide 
 	float: left
-	height: 100%
+	height: 100% !important
 	min-height: 1px
 	overflow: hidden
 	display: none
@@ -585,7 +629,7 @@ p
 		color: white
 		padding: 0 30px 0 30px
 		margin-right: 30px
-		border-right: 1px solid $gold
+		border-right: 1px solid $redOrange
 		font-family: 'Rokkitt', serif !important
 
 
@@ -667,7 +711,6 @@ p
 			font-size: 1.5em
 			font-weight: 500
 
-	
 	.slick-dots
 		display: none !important
 
@@ -678,8 +721,6 @@ p
 			margin-top: 10px
 			margin-bottom: 10px
 	
-	.img-responsive
-		width: 94%
 
 	.page-id-4, .page-id-10
 		#main
@@ -694,12 +735,17 @@ p
 		p
 			margin-left: 0
 
-	.frm_forms.frm_style_formidable-style.with_frm_style 
-		margin-left: 0
-		margin-right: 0
+
 
 	.private
 		margin-left: 0
+.map
+	padding-right: 0
+	.img-responsive
+		width: 100%
+		margin-right: -10px
+// ------------------------------------ Footer 
+
 	.footer
 		text-align: center
 		p
@@ -921,7 +967,7 @@ p
 			a
 				padding: 0 30px 0 30px
 				margin-right: 30px
-				border-right: 1px solid $gold
+				border-right: 1px solid $redOrange
 
 	.source-org
 		display: inline-block
@@ -929,7 +975,7 @@ p
 		display: inline-block
 		color: white
 		padding-right: 30px
-		border-right: 1px solid $gold
+		border-right: 1px solid $redOrange
 	.ftr-phone
 		padding-left: 30px
 	a.map

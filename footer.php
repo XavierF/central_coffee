@@ -42,7 +42,8 @@
 			$('.full-width').slick({
 				autoplay: false,
 				infinite: true,
-  			dots: true,
+				fade: true,
+  			dots: false,
   			speed: 1500,
   			swipe: true,
   			int: 5000

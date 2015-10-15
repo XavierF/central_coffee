@@ -2,7 +2,7 @@
 /**
  * Full Content Home
  *
-   Template Name:  Full Width Home Slider
+   Template Name:  Full Width Home Slider 2
  *
  */
 ?>
@@ -15,10 +15,8 @@
 
 		// vars
 		$image = get_sub_field('hero_slide');
-		$content = get_sub_field('caption');
 		?>
 			<div class="sliders img-responsive" style="background: url(<?php echo $image; ?>) ;" >
-		    	<div class="panels col-md-4"><?php echo $content; ?></div>
 			</div><!-- .sliders -->
 		<?php endwhile; ?>
 	<?php endif; ?>
@@ -31,7 +29,7 @@
 				<?php the_field('left_column');?>
 	 		</div><!-- .col-md-6 -->
 
-			<div class="map col-md-6">
+			<div class="col-md-6">
 				<img src="<?php the_field('right_column');?>" class="img-responsive">
 	 		</div><!-- .col-md-6 -->
 

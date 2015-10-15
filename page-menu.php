@@ -56,7 +56,8 @@
 					while( have_rows('menu') ): the_row(); 
 							//vars
 								$header = get_sub_field('menu_header'); 
-								$text =get_sub_field('text');
+								$text = get_sub_field('text');
+								$cat_img = get_sub_field('category_image')
 								?>
 						<div class="col-md-6">
 							
@@ -67,6 +68,8 @@
 									<div class="cat-header">
 										<h2 class"menu-header"><?php echo $header; ?></h2>
 										<p><?php echo $text; ?></p>
+										<img src="<?php echo $cat_img; ?>"  alt="<?php echo $title; ?>"  class="img-responsive">
+
 									</div><!-- .header -->
 
 								<?php 
