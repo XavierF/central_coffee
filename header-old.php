@@ -26,7 +26,7 @@
 			<!-- wordpress head functions -->
 			<?php wp_head(); ?>
 			<!-- FONTS -->
-			<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Raleway:300,400,500,700' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Oswald:400,700,300' rel='stylesheet' type='text/css'>
 			<!-- end of wordpress head -->
 			<!-- drop Google Analytics Here -->
 
