@@ -40,7 +40,7 @@
 		
 		
 			$('.full-width').slick({
-				autoplay: true,
+				autoplay: false,
 				infinite: true,
 				fade: true,
   			dots: false,
