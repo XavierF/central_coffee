@@ -15,7 +15,7 @@
 
 		// vars
 		$image = get_sub_field('hero_slide');
-		$content = get_sub_field('logo');
+		$content = get_sub_field('caption');
 		?>
 			<div class="sliders img-responsive" style="background: url(<?php echo $image; ?>) ;" >
 		    	<div class="panels col-md-4"><?php echo $content; ?></div>

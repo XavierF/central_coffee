@@ -1,45 +1,40 @@
-<div class="push"></div>
-</div> <!-- end .wrapper -->
+
+
 			
 			<!-- <div class="visible-xs">
 				<a data-spy="affix" data-offset-bottom="500" class="affix-bottom btn btn-block" href="#top">back to the top</a>
 			</div> -->
-			<footer class="footer" role="content-info">
-				<div id="inner-footer" class="wrap clearfix">
+			<footer class="footer" role="site-info">
+				<div id="inner-footer" class="container clearfix">
 				
 					<div class="source-org">
 						<a class="ftr-address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 HAYES ST, SAN FRANCISCO, CA 94117</a>
 						<a class="ftr-phone" href="tel:+4159222008">(415) 922 - 2008</a>
-						<a class="map" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco">MAP</a>
 						<p>Open Daily 6:00 AM to 7:00 PM</p>
 					</div>
 							<?php bones_footer_links(); ?>
-					<div class="source-org">&copy; <?php echo date('Y'); ?> All content is copyright of <?php bloginfo( 'name' ); ?></div>
+					
+					<div class="source-org">
+					 &copy; <?php echo date('Y'); ?>	 Copyright <?php bloginfo( 'name' ); ?>
+					</div>
 					
 				
 				</div> <!-- end #inner-footer -->
 
 			</footer> <!-- end footer -->
+</div> <!-- end .wrapper -->
 		<!-- all js scripts are loaded in library/bones.php -->
 		
 		<?php wp_footer(); ?>
 		<!-- CUSTOM JS  -->
 	<script type="text/javascript">
 		jQuery(document).ready(function($){
-			//$('.modal').modal('show');
-			//setTimeout(function(){
-  			//$('.modal').modal('hide')
-				//	}, 4000);
-
      $('.navbar-toggle').bind( "touchstart", function(e){
           e.preventDefault();
             $('.navbar-collapse').collapse('toggle');
-
-
           });
-		
-		
-			$('.full-width').slick({
+	
+			$('.hero').slick({
 				autoplay: false,
 				infinite: true,
 				fade: true,

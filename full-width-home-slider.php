@@ -9,31 +9,38 @@
 <?php get_header(); ?>
 
 <?php if( have_rows('hero') ): ?>
-<div class="full-width hero clearfix" role="hero-unit">
+<div class="container-fluid hero clearfix" role="hero-unit">
 
 	<?php while( have_rows('hero') ): the_row(); 
 
 		// vars
 		$image = get_sub_field('hero_slide');
-		$content = get_sub_field('caption');
 		?>
-			<div class="sliders img-responsive" style="background: url(<?php echo $image; ?>) ;" >
-		    	<div class="panels col-md-4"><?php echo $content; ?></div>
+			<div class="sliders img-responsive">
+		    	<img src="<?php echo $image; ?>" class="img-responsive">
 			</div><!-- .sliders -->
 		<?php endwhile; ?>
 	<?php endif; ?>
+
+	
 </div> <!-- end #full-width -->
 
 
-	<section class="container clearfix">
+	<section class="container clearfix" id="main-content">
 		<div class="row">
-			<div class="col-md-6 column-1">
+			<div class="col-md-12 main-column">
+				<h1 class="site-tagline"><?php bloginfo('description'); ?></h1>
 				<?php the_field('left_column');?>
 	 		</div><!-- .col-md-6 -->
 
 			<div class="map col-md-6">
 				<img src="<?php the_field('right_column');?>" class="img-responsive">
 	 		</div><!-- .col-md-6 -->
+	 		<div class="info col-md-6">
+	 			<h2><a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 Hayes Street (@Central Ave), San Francisco, CA 94117</a></h2>
+	 			<h2>Open Daily 6:00 AM to 7:00 PM</h2>
+	 			<h2><a href="tel:+4159222008">(415) 922-2008</a></h2>
+	 		</div>
 
 		</div><!-- .row -->
 	</section>
@@ -55,21 +62,5 @@
 
 		</div><!-- end .slides--> 
 	</section>
-<div class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <p>One fine body&hellip;</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 <?php get_footer(); ?>

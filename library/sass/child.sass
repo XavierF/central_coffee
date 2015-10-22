@@ -25,24 +25,57 @@ body, html
 		&:hover
 			color: white
 	.home
+		.header
+			background: transparent
+			height: 0
+			position: relative
+		.navbar
+			background: transparent
+			margin-top: 570px
+		.address, .phone
+			display: none !important
+		.logo-container
+			position: absolute
+			left: 0
+			top: 200px
+			height: 200px
+			width: 100%
+			z-index: 2000
+			text-align: center !important
+		.navbar-brand
+			padding: 0
+			background-size: contain
+			float: none
 		.main
 			background: rgba(0,0,0,0.78039)
 			width: 400px
 			height: 370px
 			margin: 50px 0 0 0
 			padding: 20px
+			margin-bottom
 			.copy
 				color: $paleWhite
 				font-weight: 600
 				font-family: 'Rokkitt', serif
-		.col-md-6
+		.main-column
 			.sub-head
-				color: $redOrange
+				color: $redOrange !important
 				font-family: 'Rokkitt', serif
 				font-size: 2.45em
 				font-weight: 600
 				margin-top: 10px
 				margin-bottom: 10px
+				text-align: center
+			p
+				font-size: 2em
+				color: $brown
+				font-family: 'Rokkitt', serif
+				font-weight: bold
+				text-align: center
+		.info
+			h2, a
+				color: $redOrange
+
 
 		.page-title
 			color: $orange
@@ -66,6 +99,9 @@ body, html
 	min-height: 100%
 	height: auto !important
 	height: 100% !important
+#main-content
+	margin: 20px auto
+	position: relative
 
 // HEADER
 .header
@@ -85,7 +121,7 @@ body, html
 	width: 50%
 	&:hover
 		background-color: transparent
-	background: url('../images/CC-logo-2015.png') center  center no-repeat
+	background: url('../images/cc-logo-light-2.png') center  center no-repeat
 	background-size: 85%
 .address
 	height: 150px
@@ -94,7 +130,7 @@ body, html
 	display: inline-block !important
 	float: left
 	width: 25%
-	h3
+	h2
 		font-size: 1.7em
 		font-weight: 500
 		line-height: 1em
@@ -125,6 +161,7 @@ body, html
 .navbar-default
 	text-align: center
 	position: relative
+
 .navbar
 	border: 0
 	border-radius: 0
@@ -163,7 +200,7 @@ body, html
 				padding-top: 2px
 				padding-bottom: 0
 				font-family: 'Rokkitt', serif
-				font-weight: 400
+				font-weight: 500
 				font-size: 1.4em
 				&:hover
 					color: darken($cream, 10%)
@@ -197,57 +234,27 @@ body, html
 
 //------------------------------------ HERO
 .hero
-	position: relative
 	margin-top: 0
 	padding: 0 !important
 	width: 100% !important
+	img
+		width: 100%
 	.slick-dots 
 		position: absolute
 		bottom: -8%
 		margin-bottom: 0
-.tag
-	position: absolute
-	top: 39.5%
-	left: 0
-	width: 100%
-	z-index: 1000
+.site-tagline
 	text-align: center
-	h1
-		color: black
-		font-weight: 700
-
-//----------------------------------- HOME PAGE 2
-.page-id-213, .page-id-199
-	position: relative
-	.header
-		position: absolute
-		top: 20px
-		left: 0
-		z-index: 2000
-		width: 100%
-		background: transparent
-
-	.navbar-brand
-		margin-top: 100px !important
-		background: url('../images/CC-logo-for-Xavier-02-light.png') center  center no-repeat
-		background-size: cover
-
-	.navbar
-		position: absolute !important
-		top: 0
-		left: 0
-		width: 100%
-		background: transparent
-	.phone
-		float: right
+	font-family: 'Rokkitt', serif
+	font-size: 4em
+	color: $darkGrey
+	display: block
+	width: 100%
+	padding: 0 20%
+	margin: 40px 0
+	float: none
 
 
-	.full-width
-		margin-bottom: 220px
-
-	.panels
-		background: rgba(0,0,0,0)
-		height: 350px !important
 
 // Slider
 .full-width 
@@ -259,20 +266,6 @@ body, html
 	background-size: 100% !important
 	background-repeat: no-repeat !important
 	height: 100% !important
-
-
-.panels
-	color: black
-	background: rgba(234, 227, 208, 0.2)
-	padding: 20px
-	font-family: 'Raleway', sans-serif
-	font-weight: 500
-	&:nth-child(1)
-		margin-left: 350px
-		height: 300px
-	&:nth-child(2)
-		margin-left: 0
-
 
 
 .slick-slider 
@@ -391,6 +384,11 @@ body, html
 	outline: none
 	z-index: 1020
 
+.hero
+	max-height: 628px
+	.slick-prev, .slick-next
+		top: 50%
+
 .slick-prev:focus, .slick-next
 	&:focus
 		outline: none
@@ -403,7 +401,7 @@ body, html
 		font-family: 'slick' !important
 		font-size: 1em
 		line-height: 1
-		color: rgba(white, .5)
+		color: $redOrange
 		-webkit-font-smoothing: antialiased
 		-moz-osx-font-smoothing: grayscale
 
@@ -559,8 +557,8 @@ body, html
 		
 .sub-head
 	font-family: 'Rokkitt', serif
-	font-size: 1.9em
-	margin-bottom: 2px
+	color: $redOrange
+
 
 //-------------------------------------------- SIDEBAR
 .sidebar
@@ -605,7 +603,6 @@ body, html
 .private
 	margin-left: 9%
 	font-size: 8px
-
 
 
 // FOOTER
@@ -742,10 +739,9 @@ p
 	.private
 		margin-left: 0
 .map
-	padding-right: 0
+	padding-left: 0
 	.img-responsive
 		width: 100%
-		margin-right: -10px
 // ------------------------------------ Footer 
 
 	.footer
@@ -967,20 +963,21 @@ p
 		margin: 0
 		li
 			a
-				padding: 0 30px 0 30px
+				padding: 0 30px
 				margin-right: 30px
 				border-right: 1px solid $redOrange
 
 	.source-org
 		display: inline-block
-	.ftr-address, .ftr-phone
-		display: inline-block
-		color: white
-		padding-right: 30px
-		border-right: 1px solid $redOrange
+		a, p
+			display: inline-block
+			color: white
+			padding: 0 30px
+			border-right: 1px solid $redOrange
 	.ftr-phone
-		padding-left: 30px
+		display: inline-block
 	a.map
+		display: inline-block
 		padding: 0 30px
 		color: white
 	
@@ -1089,8 +1086,6 @@ p
 @media screen and (min-width: 1024px)
 	.img-responsive
 		width: 94%
-
-
 	
 @media screen and (min-width: 768px) and (max-width: 1199px)	
 	.archive
