@@ -42,7 +42,6 @@
 							</div><!-- .address hidden-xs -->
 						<div class="logo-container">
 							<a class="navbar-brand col-md-6 clearfix" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
-							<!-- .navbar-brand -->
 						</div><!--.logo-container -->
 
 							<div class="phone col-md-3 hidden-xs">

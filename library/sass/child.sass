@@ -30,21 +30,26 @@ body, html
 			height: 0
 			position: relative
 		.navbar
+			position: relative
 			background: transparent
-			margin-top: 570px
+			margin-top: 41%
 		.address, .phone
 			display: none !important
 		.logo-container
-			position: absolute
-			left: 0
-			top: 200px
-			height: 200px
-			width: 100%
-			z-index: 2000
+			position: relative
 			text-align: center !important
+			width: 100% !important
 		.navbar-brand
+			display: block
+			position: absolute
+			width: 100% !important
+			left: 0
+			top: 0%
+			height: 200px
+			z-index: 2000
 			padding: 0
 			background-size: contain
+			background-position: center center !important
 			float: none
 		.main
 			background: rgba(0,0,0,0.78039)
@@ -116,7 +121,7 @@ body, html
 	height: 180px
 	margin: 10px 0 !important
 	background-color: transparent
-	display: inline-block !important
+	display: inline-block
 	float: left
 	width: 50%
 	&:hover
@@ -780,14 +785,26 @@ p
 		margin-top: 10px
 
 @media screen and (min-width: 320px) and (max-width: 568px) and (orientation : portrait)
+	.home
+		.header
+			height: 100px !important
+		.navbar
+			margin-top: 61%	!important
+		.masthead
+			height: 0
+		.navbar-brand
+			background-size: 70% !important
+		.slick-prev, .slick-next
+			display: none !important
+		.hero
+			height: auto !important
+		.site-tagline
+			font-size: 1.8em
+
 	.navbar-brand
 		width: 100%
 		height: 105px
 
-	.sliders
-		background-size: cover !important
-		min-height: 200px !important
-		width: auto
 
 	.panels
 		width: 100% !important
@@ -876,6 +893,10 @@ p
 		margin-left: 130px !important
 
 @media screen and (min-width: 569px) and (max-width:767px)
+	.home
+		.navbar-brand
+			margin-top: 2% !important
+			background-size: 50% !important
 
 	.hero
 		margin-bottom: 0 !important
@@ -1013,6 +1034,11 @@ p
 			font-size: 1.4em   
 	.hidden-xs
 		display: inline-block !important
+@media screen and (min-width: 679px) and (max-width: 745px)
+	.home
+		.navbar-brand
+			background-size: 50% !important
+			margin-left: -15% !important
 
 
 @media screen and (min-width: 768px) and (max-width:991px) 
@@ -1104,6 +1130,10 @@ p
 			margin-top: 10px
 
 @media screen and (min-width: 768px) and (max-width: 1090px)	
+	.home
+		.navbar-brand
+			margin-top: 12% !important
+			background-size: 60% !important
 	.panels
 		height: 200px !important
 		width: 40% !important
@@ -1114,6 +1144,10 @@ p
 			margin-top: 0
 
 @media screen and (min-width: 1091px) and (max-width: 1199px)
+	.home
+		.navbar-brand
+			margin-top: 15% !important
+
 
 	.panels
 		position: relative
@@ -1127,12 +1161,16 @@ p
 		bottom: -5%
 
 @media screen and (min-width: 992px) and (max-width: 1199px)
+
 	.masthead
 		width: 970px !important
 		margin: 0 auto !important
 		padding: 0 15px
 
 @media screen and (min-width: 1200px)
+	.home
+		.navbar-brand
+			margin-top: 15% !important
 	.container
 		width: 1080px
 
