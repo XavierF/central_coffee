@@ -58,9 +58,7 @@
 					<nav role="navigation">
 						<div class="navbar navbar-default clearfix">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
+								<span>MENU</span>
 							</button>
 							<div class="navbar-collapse collapse navbar-responsive-collapse">
 								<div class="container">

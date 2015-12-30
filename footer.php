@@ -11,11 +11,9 @@
 						<a class="ftr-address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 HAYES ST, SAN FRANCISCO, CA 94117</a>
 						<a class="ftr-phone" href="tel:+4159222008">(415) 922 - 2008</a>
 						<p>Open Daily 6:00 AM to 7:00 PM</p>
-					</div>
 							<?php bones_footer_links(); ?>
-					
-					<div class="source-org">
-					 &copy; <?php echo date('Y'); ?>	 Copyright <?php bloginfo( 'name' ); ?>
+				
+					 <p class="copyright">&copy; <?php echo date('Y'); ?>	 Copyright <?php bloginfo( 'name' ); ?></p>
 					</div>
 					
 				

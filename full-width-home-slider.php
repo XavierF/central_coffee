@@ -8,11 +8,12 @@
 ?>
 <?php get_header(); ?>
 
+<div class="logo-container-home">
+	<a class="navbar-brand-home col-md-6 clearfix" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
+</div><!--.logo-container -->
 <?php if( have_rows('hero') ): ?>
 <div class="container-fluid hero clearfix" role="hero-unit">
-
 	<?php while( have_rows('hero') ): the_row(); 
-
 		// vars
 		$image = get_sub_field('hero_slide');
 		?>
@@ -20,12 +21,8 @@
 		    	<img src="<?php echo $image; ?>" class="img-responsive">
 			</div><!-- .sliders -->
 		<?php endwhile; ?>
-	<?php endif; ?>
-
-	
 </div> <!-- end #full-width -->
-
-
+<?php endif; ?>
 	<section class="container clearfix" id="main-content">
 		<div class="row">
 			<div class="col-md-12 main-column">
