@@ -38,7 +38,7 @@
 						<div class="masthead">
 							<div class="row">
 							<div class="address col-md-3 hidden-xs">
-								<a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank"><h3>1696 Hayes Street</h3><h3>(@Central Ave),</h3><h3>San Francisco, CA 94117</h3></a>
+								<a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 Hayes Street<br />(@Central Ave),<br />San Francisco, CA 94117</a>
 							</div><!-- .address hidden-xs -->
 						<div class="logo-container">
 							<a class="navbar-brand col-md-6 clearfix" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
