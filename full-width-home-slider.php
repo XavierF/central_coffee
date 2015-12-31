@@ -34,9 +34,9 @@
 				<img src="<?php the_field('right_column');?>" class="img-responsive">
 	 		</div><!-- .col-md-6 -->
 	 		<div class="info col-md-6">
-	 			<h2><a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 Hayes Street (@Central Ave), San Francisco, CA 94117</a></h2>
-	 			<h2>Open Daily 6:00 AM to 7:00 PM</h2>
-	 			<h2><a href="tel:+4159222008">(415) 922-2008</a></h2>
+	 			<h2 class="sub-head"><a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 Hayes Street (@Central Ave), San Francisco, CA 94117</a></h2>
+	 			<h2 class="sub-head">Open Daily 6:00 AM to 7:00 PM</h2>
+	 			<h2 class="sub-head"><a href="tel:+4159222008">(415) 922-2008</a></h2>
 	 		</div>
 
 		</div><!-- .row -->

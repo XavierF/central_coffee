@@ -5,7 +5,7 @@
 				<a data-spy="affix" data-offset-bottom="500" class="affix-bottom btn btn-block" href="#top">back to the top</a>
 			</div> -->
 			<footer class="footer" role="site-info">
-				<div id="inner-footer" class="container clearfix">
+				<div class="container clearfix">
 				
 					<div class="source-org">
 						<a class="ftr-address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 HAYES ST, SAN FRANCISCO, CA 94117</a>
@@ -17,7 +17,7 @@
 					</div>
 					
 				
-				</div> <!-- end #inner-footer -->
+				</div> <!-- end .container -->
 
 			</footer> <!-- end footer -->
 </div> <!-- end .wrapper -->

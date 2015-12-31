@@ -627,9 +627,9 @@ body, html
 .footer
 	margin-top: 0
 	background: $brown
-#inner-footer
-	width: 1200px !important
-	margin: 0 auto
+	.container
+		width: 1200px !important
+		margin: 0 auto
 .source-org
 	margin-bottom: 0
 	color: white
@@ -685,6 +685,9 @@ body, html
 					text-align: center !important
 	.footer
 		padding: 20px 0 !important
+		.container
+			width: 100% !important
+			min-height: 180px
 		.source-org
 			text-align: center !important
 			display: block
@@ -710,9 +713,7 @@ body, html
 				text-align: center
 				float: none
 				border: 0
-	#inner-footer
-		width: 100% !important
-		min-height: 180px
+	
 
 	.mobile-address
 		font-size: 1.2em
@@ -766,12 +767,12 @@ body, html
 		margin-right: 0
 		input
 			width: 100% !important
-	
-	.footer
-		padding: 5px 0 10px 0
 
 	.footer
 		padding: 20px 0 !important
+		.container
+			width: 100% !important
+			min-height: 180px
 		.source-org
 			text-align: center !important
 			display: block
@@ -797,9 +798,6 @@ body, html
 				text-align: center
 				float: none
 				border: 0
-	#inner-footer
-		width: 100% !important
-		min-height: 180px
 
 @media screen and (max-width: 568px)
 	.header
@@ -975,6 +973,9 @@ body, html
 
 	.footer
 		padding: 20px 0 !important
+		.container
+			width: 100% !important
+			min-height: 180px
 		.source-org
 			text-align: center !important
 			display: block
@@ -1000,9 +1001,6 @@ body, html
 				text-align: center
 				float: none
 				border: 0
-	#inner-footer
-		width: 100% !important
-		min-height: 180px
 
 @media screen and (max-width: 516px)
 	.address, .phone
@@ -1011,9 +1009,6 @@ body, html
 @media screen and (min-width: 569px)
 	.visible-xs
 		display: none !important
-
-
-
 
 @media screen and (max-width:767px)
 	.navbar
@@ -1142,6 +1137,9 @@ body, html
 
 	.footer
 		padding: 20px 0 !important
+		.container
+			width: 100% !important
+			min-height: 180px
 		.source-org
 			text-align: center !important
 			display: block
@@ -1167,11 +1165,12 @@ body, html
 				text-align: center
 				float: none
 				border: 0
-	#inner-footer
-		width: 100% !important
-		min-height: 180px
 			
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape)
+
+@media screen and (min-width: 481px) and (max-width: 745px)
+	.sub-head
+		text-align: center  
 
 @media screen and (min-width: 746px) and (max-width: 901px)
 	.home
@@ -1200,6 +1199,10 @@ body, html
 		padding-right: 15px
 		display: inline-block !important 
 		float: left   
+
+	.sub-head
+		text-align: center  
+
 	.hidden-xs
 		display: inline-block !important
 
@@ -1220,9 +1223,10 @@ body, html
 	.phone .col-md-3
 		width: 28% !important
 		padding-right: 20px
-		display: inline-block !important    
+		display: inline-block !important  
 
-
+	.sub-head
+		text-align: center  
 
 
 @media screen and (min-width: 1024px)
