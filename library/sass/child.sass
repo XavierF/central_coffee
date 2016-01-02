@@ -196,11 +196,11 @@ body, html
 			height: 15px
 			line-height: 10px
 		&:hover, &:active
-			background: transparent
+			background: $redOrange
 			outline: none
 		&:focus
 			outline: none
-			background: transparent
+			background: $redOrange
 		.icon-bar
 			margin: 3px auto
 			height: 2px
@@ -662,7 +662,73 @@ body, html
 		li
 			font-size: 1em
 
-@media screen and (min-width: 320px) and (max-width: 480px) and (orientation : portrait)
+@media screen and (min-width: 320px) and (max-width: 341px) and (orientation : portrait)
+	.home
+		.header
+			height: 100px !important
+		.navbar
+			margin-top: 74%	!important
+		.masthead
+			height: 0
+		.navbar-brand-home
+			background-size: 70% !important
+			height: 150px !important
+			top: 3.5% !important
+		.slick-prev, .slick-next
+			display: none !important
+		.site-tagline
+			font-size: 1.8em
+			margin: 0
+		#main-content
+			.sub-head, p
+				font-size: 1.8em !important
+			.info
+				h2
+					font-size: 1.5em !important
+					text-align: center !important
+
+	.navbar-brand
+		width: 100%
+		height: 105px
+	.footer
+		padding: 20px 0 !important
+		.container
+			width: 100% !important
+			min-height: 180px
+		.source-org
+			text-align: center !important
+			display: block
+			a, p
+				display: block
+				width: auto
+				padding: 0
+				margin-left: 0 !important
+				margin-right: 0 !important
+				margin-bottom: 5px
+				border: 0
+				float: none
+				text-align: center !important
+				
+	.footer-nav
+		display: block !important
+		height: 20px
+		li
+			display: block
+			a
+				display: block
+				margin: 0 0 5px
+				width: 100% !important
+				text-align: center
+				float: none
+				border: 0
+	.mobile-address
+		font-size: 1.2em
+	.mobile-phone
+		font-size: 1.2em
+
+
+
+@media screen and (min-width: 342px) and (max-width: 480px) and (orientation : portrait)
 	.home
 		.header
 			height: 100px !important
@@ -719,7 +785,6 @@ body, html
 				text-align: center
 				float: none
 				border: 0
-	
 
 	.mobile-address
 		font-size: 1.2em
