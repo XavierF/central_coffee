@@ -26,9 +26,6 @@ body, html
 		color: white
 		&:hover
 			color: white
-
-
-
 	.home
 		.main
 			background: rgba(0,0,0,0.78039)
@@ -40,20 +37,34 @@ body, html
 				color: $paleWhite
 				font-weight: 600
 				font-family: 'Rokkitt', serif
-		.main-column
+		
+		.content-header
+			padding: 20px 150px
 			.sub-head
 				color: $redOrange !important
 				font-family: 'Rokkitt', serif
 				font-size: 2.45em
+				letter-spacing: .1em
 				font-weight: 600
-				margin-top: 10px
-				margin-bottom: 10px
+				line-height: 1.5
+				margin-top: 10px 
 				text-align: center
+		.main-column
 			p
 				font-size: 2em
 				color: $brown
 				font-family: 'Rokkitt', serif
-				font-weight: bold
+				font-weight: 700
+				text-align: center
+				margin-bottom: 0
+			.sub-head
+				color: $redOrange !important
+				font-family: 'Rokkitt', serif
+				font-size: 2.45em
+				letter-spacing: .1em
+				font-weight: 600
+				line-height: 1.5
+				margin-top: 10px 
 				text-align: center
 		.info
 			h2, a
@@ -87,7 +98,7 @@ body, html
 
 //--------------------------------------------- HEADER -----------------------------//
 .header
-	height: 230px
+	height: 250px
 .masthead
 	width: 1080px
 	margin: 0 auto
@@ -99,7 +110,7 @@ body, html
 .navbar-brand
 	height: 220px
 	width: 50%
-	margin: 20px auto !important
+	margin: 50px auto !important
 	background-color: transparent
 	float: none
 	display: block
@@ -242,15 +253,17 @@ body, html
 		position: absolute
 		bottom: -8%
 		margin-bottom: 0
+
 .site-tagline
 	text-align: center
 	font-family: 'Rokkitt', serif
 	font-size: 4em
+	letter-spacing: .1em
 	color: $redOrange
 	display: block
 	width: 100%
-	padding: 0 50px
-	margin: 0
+	margin: 40px 0
+	padding: 0 30px
 	float: none
 
 // Slider
