@@ -4,7 +4,7 @@
 			<!-- <div class="visible-xs">
 				<a data-spy="affix" data-offset-bottom="500" class="affix-bottom btn btn-block" href="#top">back to the top</a>
 			</div> -->
-			<footer class="footer" role="site-info">
+			<footer class="footer clearfix" role="site-info">
 				<div class="container clearfix">
 				
 					<div class="source-org">
@@ -13,7 +13,7 @@
 						<p>Open Daily 6:00 AM to 7:00 PM</p>
 							<?php bones_footer_links(); ?>
 				
-					 <p class="copyright">&copy; <?php echo date('Y'); ?>	 Copyright <?php bloginfo( 'name' ); ?></p>
+					 <p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
 					</div>
 					
 				

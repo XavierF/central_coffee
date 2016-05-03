@@ -49,8 +49,6 @@
 							</div><!-- .phone -->
 
 							</div><!-- .row -->
-							<h4 class="mobile-address visible-xs"><a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 Hayes Street (@Central Ave),<br /> San Francisco, CA 94117</a></h4>
-							<h4 class="mobile-phone visible-xs"><a href="tel:+4159222008">(415) 922-2008</a></h4>
 
 							<!--<a href="https://www.google.com/maps/place/1696+Hayes+St,+San+Francisco,+CA+94117/@37.7751568,-122.4443275,18z/data=!4m2!3m1!1s0x808580b28170d723:0xc411367e70f31ed0" target="_blank"><h3>1696 Hayes Street, San Francisco, CA 94117</h3></a> <a href="tel:+4159222008" class="phone"><h3>(415) 922 - 2008</h3></a> -->			
 						</div><!-- end .container -->

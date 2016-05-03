@@ -19,7 +19,9 @@ body, html
 	overflow-x: hidden
 	font-family: 'Raleway', sans-serif
 	font-weight: medium !important
-	background: $cream !important
+	background: white
+	hr
+		border-top: 2px dotted $darkGrey
 	a
 		color: white
 		&:hover
@@ -40,17 +42,18 @@ body, html
 		.logo-container-home
 			position: relative
 			text-align: center !important
-			width: 100% !important
+			width: 80% !important
+			margin: 0 auto
 		.navbar-brand-home
 			display: block
 			position: absolute
 			width: 100% !important
 			top: 0
 			left: 0
-			height: 200px
+			height: 220px
 			z-index: 2000
 			padding: 0
-			background: url('../images/cc-logo-light-2.png') center  center no-repeat
+			background: url('../images/cc-logo-2015.png') center  center no-repeat
 			background-size: contain
 			background-position: center center !important
 			float: none
@@ -84,7 +87,6 @@ body, html
 			h2, a
 				color: $redOrange
 
-
 		.page-title
 			color: $orange
 			text-align: left
@@ -108,7 +110,7 @@ body, html
 	height: auto !important
 	height: 100% !important
 #main-content
-	margin: 20px auto
+	margin: 0 auto 20px auto
 	position: relative
 
 // HEADER
@@ -172,10 +174,12 @@ body, html
 	position: relative
 
 .navbar
-	border: 0
-	border-radius: 0
-	background: $brown
-	min-height: 30px !important
+	display: none
+	visibility: hidden
+//border: 0
+//border-radius: 0
+//background: $brown
+//min-height: 30px !important
 
 	.container
 		position: relative
@@ -250,10 +254,12 @@ body, html
 	color: white
 
 //------------------------------------ HERO
+	
 .hero
 	margin-top: 0
 	padding: 0 !important
 	width: 100% !important
+	height: 400px
 	img
 		width: 100%
 	.slick-dots 
@@ -264,33 +270,35 @@ body, html
 	text-align: center
 	font-family: 'Rokkitt', serif
 	font-size: 4em
-	color: $darkGrey
+	color: $redOrange
 	display: block
 	width: 100%
-	padding: 0 20%
+	padding: 0 50px
 	margin: 40px 0
 	float: none
-
-
 
 // Slider
 .full-width 
 	.slick-slider
 		margin: 0 0 30px 0
 		height: 100% !important
-		
+
+.film-strip
+	margin-bottom: 20px
+	.slick-dots
+		margin-bottom: 50px !important
+		bottom: -30px !important
 .sliders
 	background-size: 100% !important
 	background-repeat: no-repeat !important
 	height: 100% !important
-
 
 .slick-slider 
 	position: relative 
 	display: block 
 	width: 100%
 	background: transparent
-	margin: 0 0 40px 0
+	margin: 0 
 	padding: 20px 2% 20px 3%
 	box-sizing: border-box 
 	-moz-box-sizing: border-box 
@@ -433,7 +441,6 @@ body, html
 
 [dir='rtl'] .slick-prev:before
 	content: '→'
-	color: white
 
 .slick-next
 	right: 30px
@@ -512,9 +519,6 @@ body, html
 .slides
 	.item
 		height: auto
-
-.film-strip
-	background: $brown
 
 
 //----------------------------PAGE CONTENT
@@ -626,30 +630,33 @@ body, html
 	height: 0
 	float: left
 .footer
-	margin-top: 0
-	background: $brown
+	margin-top: 30px
+	border-top: 2px dotted $darkGrey
 	.container
 		width: 1200px !important
 		margin: 0 auto
+		padding: 0
 	.source-org
 		margin-bottom: 0
-		color: white
+		color: $darkGrey
 		font-family: 'Rokkitt', serif !important
 		a, p
 			display: inline-block
 			border-right: 1px solid $redOrange
 			padding: 0 30px
+			color: $darkGrey
 		.copyright
 			border-right: 0
 			display: inline-block
 			text-align: center
+			float: none
 			padding-right: 0
-			padding-left: 30px
+			padding-left: 25px
 .footer-nav
 	display: inline-block
 	margin: 0
 	a
-		color: white
+		color: $darkGrey
 		padding: 0 30px 0 30px
 		border-right: 1px solid $redOrange
 		font-family: 'Rokkitt', serif !important
@@ -662,10 +669,10 @@ body, html
 		li
 			font-size: 1em
 
-@media screen and (min-width: 320px) and (max-width: 341px) and (orientation : portrait)
+@media screen and (min-width: 320px) and (max-width: 568px) and (orientation : portrait)
 	.home
 		.header
-			height: 100px !important
+			display: none
 		.navbar
 			margin-top: 74%	!important
 		.masthead
@@ -708,7 +715,7 @@ body, html
 				border: 0
 				float: none
 				text-align: center !important
-				
+
 	.footer-nav
 		display: block !important
 		height: 20px
@@ -731,7 +738,7 @@ body, html
 @media screen and (min-width: 342px) and (max-width: 480px) and (orientation : portrait)
 	.home
 		.header
-			height: 100px !important
+			display: none
 		.navbar
 			margin-top: 67%	!important
 		.masthead
@@ -977,6 +984,29 @@ body, html
 
 
 @media screen and (max-width: 568px) and (orientation : landscape)
+	.home
+		.header
+			height: 100px !important
+		.navbar
+			margin-top: 61%	!important
+		.masthead
+			height: 0
+		.navbar-brand-home
+			background-size: 70% !important
+			height: 150px !important
+			top: 10% !important
+
+		.slick-prev, .slick-next
+			display: none !important
+		.hero
+			height: auto !important
+		.site-tagline
+			font-size: 1.8em
+
+	.navbar-brand
+		width: 100%
+		height: 105px
+
 	.header
 		height: auto !important
 	.hero
@@ -1019,8 +1049,63 @@ body, html
 			float: right
 	.frm_error
 		margin-left: 130px !important
+	.footer
+		padding: 20px 0 !important
+		.container
+			width: 100% !important
+			min-height: 180px
+		.source-org
+			text-align: center !important
+			display: block
+			a, p
+				display: block
+				width: auto
+				padding: 0
+				margin-left: 0 !important
+				margin-right: 0 !important
+				margin-bottom: 5px
+				border: 0
+				float: none
+				text-align: center !important
+	.footer-nav
+		display: block !important
+		height: 20px
+		li
+			display: block
+			a
+				display: block
+				margin: 0 0 5px
+				width: 100% !important
+				text-align: center
+				float: none
+				border: 0
 
-@media screen and (min-width: 569px) and (max-width:767px)
+@media screen and (max-width: 736px) and (orientation : landscape)
+
+	home
+		.header
+			height: 100px !important
+		.navbar
+			margin-top: 61%	!important
+		.masthead
+			height: 0
+		.navbar-brand-home
+			background-size: 70% !important
+			height: 150px !important
+			top: 10% !important
+
+		.slick-prev, .slick-next
+			display: none !important
+		.hero
+			height: auto !important
+		.site-tagline
+			font-size: 1.8em
+
+	.navbar-brand
+		width: 100%
+		height: 105px
+
+@media screen and (min-width: 569px) and (max-width:767px) and (orientation : portrait)
 	.home
 		.navbar
 			margin-top: 43%	!important
@@ -1391,7 +1476,7 @@ body, html
 @media screen and (min-width: 1200px)
 	.home
 		.navbar-brand-home
-			margin-top: 12% !important
+			margin-top: 5% !important
 	.container
 		width: 1080px
 
