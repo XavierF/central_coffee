@@ -35,21 +35,12 @@
 		<body <?php body_class(); ?>>
 			<div class="wrapper">
 				<header class="header clearfix" role="banner" id="top">
-						<div class="masthead">
+						<div class="masthead clearfix">
 							<div class="row">
-							<div class="address col-md-3 hidden-xs">
-								<a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 Hayes Street<br />(@Central Ave),<br />San Francisco, CA 94117</a>
-							</div><!-- .address hidden-xs -->
-						<div class="logo-container">
-							<a class="navbar-brand col-md-6 clearfix" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
-						</div><!--.logo-container -->
-
-							<div class="phone col-md-3 hidden-xs">
-								<h3>Open Daily</h3><h3>6:00 AM to 7:00 PM</h3><h3><a href="tel:+4159222008">(415) 922-2008</a></h3>
-							</div><!-- .phone -->
-
+								<div class="logo-container">
+									<a class="navbar-brand col-md-12 clearfix" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
+								</div><!--.logo-container -->
 							</div><!-- .row -->
-
 							<!--<a href="https://www.google.com/maps/place/1696+Hayes+St,+San+Francisco,+CA+94117/@37.7751568,-122.4443275,18z/data=!4m2!3m1!1s0x808580b28170d723:0xc411367e70f31ed0" target="_blank"><h3>1696 Hayes Street, San Francisco, CA 94117</h3></a> <a href="tel:+4159222008" class="phone"><h3>(415) 922 - 2008</h3></a> -->			
 						</div><!-- end .container -->
 

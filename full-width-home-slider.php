@@ -8,9 +8,6 @@
 ?>
 <?php get_header(); ?>
 
-<div class="logo-container-home">
-	<div class="navbar-brand-home col-md-6 clearfix" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></div>
-</div><!--.logo-container -->
 <?php if( have_rows('hero') ): ?>
 <div class="container-fluid hero clearfix" role="hero-unit">
 	<?php while( have_rows('hero') ): the_row(); 

@@ -26,44 +26,16 @@ body, html
 		color: white
 		&:hover
 			color: white
-	.home
-		.header
-			background: transparent
-			height: 0
-			position: relative
-		.navbar
-			background: transparent
-			margin-top: 41%
 
-		.address, .phone
-			display: none !important
-		.logo-container, .navbar-brand
-			display: none
-		.logo-container-home
-			position: relative
-			text-align: center !important
-			width: 80% !important
-			margin: 0 auto
-		.navbar-brand-home
-			display: block
-			position: absolute
-			width: 100% !important
-			top: 0
-			left: 0
-			height: 220px
-			z-index: 2000
-			padding: 0
-			background: url('../images/cc-logo-2015.png') center  center no-repeat
-			background-size: contain
-			background-position: center center !important
-			float: none
+
+
+	.home
 		.main
 			background: rgba(0,0,0,0.78039)
 			width: 400px
 			height: 370px
 			margin: 50px 0 0 0
 			padding: 20px
-			margin-bottom
 			.copy
 				color: $paleWhite
 				font-weight: 600
@@ -113,26 +85,28 @@ body, html
 	margin: 0 auto 20px auto
 	position: relative
 
-// HEADER
+//--------------------------------------------- HEADER -----------------------------//
 .header
-	background: $cream
 	height: 230px
 .masthead
 	width: 1080px
 	margin: 0 auto
 	padding: 0 15px
+.logo-container
+	text-align: center
+	margin: 20px 0
 	
 .navbar-brand
-	height: 180px
-	margin: 10px 0 !important
-	background-color: transparent
-	display: inline-block
-	float: left
+	height: 220px
 	width: 50%
+	margin: 20px auto !important
+	background-color: transparent
+	float: none
+	display: block
+	background: url('../images/CC-logo-2015.png') center  center no-repeat
+	background-size: contain
 	&:hover
 		background-color: transparent
-	background: url('../images/cc-logo-light-2.png') center  center no-repeat
-	background-size: 85%
 .address
 	height: 150px
 	padding: 80px 0 10px 5px
@@ -256,13 +230,15 @@ body, html
 //------------------------------------ HERO
 	
 .hero
-	margin-top: 0
-	padding: 0 !important
+	height: 20px
 	width: 100% !important
-	height: 400px
+	margin-top: 0
+	padding: 0 !important	
+	display: block
 	img
 		width: 100%
 	.slick-dots 
+		display: none
 		position: absolute
 		bottom: -8%
 		margin-bottom: 0
@@ -274,7 +250,7 @@ body, html
 	display: block
 	width: 100%
 	padding: 0 50px
-	margin: 40px 0
+	margin: 0
 	float: none
 
 // Slider
@@ -284,10 +260,8 @@ body, html
 		height: 100% !important
 
 .film-strip
-	margin-bottom: 20px
-	.slick-dots
-		margin-bottom: 50px !important
-		bottom: -30px !important
+	padding-bottom: 50px 
+
 .sliders
 	background-size: 100% !important
 	background-repeat: no-repeat !important
@@ -1476,7 +1450,7 @@ body, html
 @media screen and (min-width: 1200px)
 	.home
 		.navbar-brand-home
-			margin-top: 5% !important
+			margin-top: 8% !important
 	.container
 		width: 1080px
 
