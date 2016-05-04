@@ -6,16 +6,25 @@
 			</div> -->
 			<footer class="footer clearfix" role="site-info">
 				<div class="container clearfix">
-					<hr>
+					<hr class="dotted">
+
+					<div class="source-org .mobile visible-xs">
+						<p>Open Daily</p>
+						<p> 6:00 AM to 7:00 PM</p>
+						<p>1696 HAYES ST, SAN FRANCISCO, CA 94117</p>
+						<a class="ftr-phone" href="tel:+4159222008">(415) 922 - 2008</a>
+						<a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">MAP</a>
+					 	<p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
+					</div><!-- .source-org .mobile -->
 				
-					<div class="source-org">
+					<div class="source-org hidden-xs">
 						<a class="ftr-address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 HAYES ST, SAN FRANCISCO, CA 94117</a>
 						<a class="ftr-phone" href="tel:+4159222008">(415) 922 - 2008</a>
 						<p>Open Daily 6:00 AM to 7:00 PM</p>
 							<?php bones_footer_links(); ?>
 				
 					 <p class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
-					</div>
+					</div><!-- .source-org -->
 					
 				
 				</div> <!-- end .container -->
