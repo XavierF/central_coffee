@@ -6,6 +6,7 @@
 			</div> -->
 			<footer class="footer clearfix" role="site-info">
 				<div class="container clearfix">
+					<hr>
 				
 					<div class="source-org">
 						<a class="ftr-address" href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">1696 HAYES ST, SAN FRANCISCO, CA 94117</a>
