@@ -9,8 +9,8 @@
 					<hr class="dotted">
 
 					<div class="source-org .mobile visible-xs">
-						<p>Open Daily</p>
-						<p> 6:00 AM to 7:00 PM</p>
+						<h2 class="sub-head">Open Daily</h2>
+						<h2 class="sub-head"> 6:00 AM to 7:00 PM</h2>
 						<p>1696 HAYES ST, SAN FRANCISCO, CA 94117</p>
 						<a class="ftr-phone" href="tel:+4159222008">(415) 922 - 2008</a>
 						<a href="https://local.yahoo.com/info-21357723-central-coffee-tea-spice-san-francisco" target="_blank">MAP</a>
